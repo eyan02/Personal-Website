@@ -15,7 +15,13 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
 
+img.headImgs{
+  max-width: 150px;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
