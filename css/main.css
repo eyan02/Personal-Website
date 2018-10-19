@@ -14,14 +14,76 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+
+/* background image settings */
+    background: url("https://raw.githubusercontent.com/eyan02/Personal-Website/0bca7006cd40d3cd906b191d970a4f3d046341af/img/Theme%20background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+/* ============================================================= */
+
+/* menu settings*/
+div.menuContainer{
+  width: auto;
+  height: auto;
+  margin-top: 68px;
+}
+ul.menubar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity: 0.9;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+/* ============================================================= */
+
+
 h1,h2,h3,h4,h5,h6{
     text-align: center;
 }
 
-img.headImgs{
-  max-width: 150px;
+p{
+  margin: 1em;
 }
+
+img.headImgs{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+}
+
+div.foreground {
+  background-color: whitesmoke;
+  max-width: 85%;
+  height: 100%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  background: rgba(255, 255, 255, 0.7);
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
