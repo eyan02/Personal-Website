@@ -60,6 +60,8 @@ img.sectImgs{
   margin-top: 68px;
 }
 .menubar {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -72,7 +74,11 @@ img.sectImgs{
   opacity: 0.9;
 }
 li {
-    float: left;
+    float:left;
+}
+
+li#contact{
+    float: right;
 }
 li a {
     display: block;
@@ -83,10 +89,10 @@ li a {
 }
 /* Changes link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+    text-emphasis-color: #111;
 }
 .active {
-    background-color:  #00cc66;
+    text-decoration: underline;
 }
 
 /* ==========================================================================
