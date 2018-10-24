@@ -46,6 +46,7 @@ img.sectImgs{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 100px;
   max-width: 200px;
 }
 
@@ -54,12 +55,12 @@ img.sectImgs{
    ========================================================================== */
 
 /* menu settings*/
-.menuContainer{
+#menuContainer{
   width: auto;
   height: auto;
   margin-top: 68px;
 }
-.menubar {
+#menubar {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   position: fixed;
@@ -127,6 +128,50 @@ img.eduImgs{
 
 /* ============================================================= */
 
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+#footer{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity: 0.9;
+}
+/* ==== FOOTER SOCIAL ===*/
+#footSocial{
+  text-align: center;
+}
+ul.footSocial {
+  list-style-type: none;
+  display: inline-block;
+  height: 40px;
+  margin: 10px 0px 0px 0px;
+}
+ul.footSocial li img{
+  max-width: 30px;
+  padding: 10px;
+}
+/* ==== FOOTER BOTTOM ===*/
+#footBottom{
+  text-align: center;
+}
+.footBottom{
+  height: 30px;
+  color: whitesmoke;
+  padding: 0px;
+  margin: 0px;
+}
+#crLeft {
+  float: right;
+}
+#crRight{
+  float: left;
+}
 
 
 
