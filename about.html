@@ -15,6 +15,11 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <!-- JS -->
+  <script src="js/aos.js"></script>
+
 </head>
 
 <body>
@@ -45,6 +50,7 @@
       </div>
     </section>
 
+<!-- ====== Education Section ======= -->
   <div class="row">
     <div>
       <img class="sectImgs" alt="edu section" src="img/aboutSections/edu2alt.png"/>
@@ -54,23 +60,28 @@
 
   <div class="row">
     <div class="one-half column">
-      <div class="eduSchools">
-        <img class="eduImgs" alt="duke crest" src="img/schoolCrests/DukeCrest.png"/>
-        <div>
-          <p class="eduImgCap">Duke University in Durham, NC</p>
-          <p class="eduImgCap">MSc in Global Health, Cert. in Data Science</p>
+      <div data-aos="zoom-in" data-aos-duration="500">
+        <div class="eduSchools">
+          <img class="eduImgs" alt="duke crest" src="img/schoolCrests/DukeCrest.png"/>
+          <div>
+            <p class="eduImgCap">Duke University in Durham, NC</p>
+            <p class="eduImgCap">MSc in Global Health, Cert. in Data Science</p>
+          </div>
         </div>
       </div>
     </div>
     <div class="one-half column">
-      <div class="eduSchools">
-        <img class="eduImgs" alt="wes crest" src="img/schoolCrests/WesCrest.png"/>
-        <div>
-          <p class="eduImgCap">Wesleyan University in Middletown, CT</p>
-          <p class="eduImgCap">BA in Molecular Biology & Biochemistry</p>
+      <div data-aos="zoom-in" data-aos-duration="500">
+        <div class="eduSchools">
+          <img class="eduImgs" alt="wes crest" src="img/schoolCrests/WesCrest.png"/>
+          <div>
+            <p class="eduImgCap">Wesleyan University in Middletown, CT</p>
+            <p class="eduImgCap">BA in Molecular Biology & Biochemistry</p>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
 
   <div class="row">
@@ -89,6 +100,7 @@
 
 </div>
 
+<!-- ====== Footer Section ======= -->
 <footer id="footer">
   <div class="row">
     <div class="twleve columns" id="footSocial">
@@ -113,9 +125,14 @@
   </div>
 </footer>
 
+<!-- =================================================================
+================================================================== -->
 
-
-
+<script>
+  AOS.init({
+    easing: 'ease-in-out-sine'
+  })
+</script>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
