@@ -26,11 +26,14 @@ html {
 
 div.foreground {
   background-color: whitesmoke;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   max-width: 85%;
   height: 100%;
   margin-left: 7.5%;
   margin-right: 7.5%;
-  padding: 20px;
   background: rgba(255, 255, 255, 0.78);
 }
 
@@ -39,6 +42,7 @@ h1{
   text-align: center;
   font-family: arial;
   font-weight: bold;
+  padding: 30px 0px 0px 0px;
 }
 h2,h3,h4,h5,h6{
     text-align: center;
@@ -58,7 +62,11 @@ img.sectImgs{
   margin-right: auto;
   padding-top: 100px;
   max-width: 200px;
+  opacity: .7;
 }
+
+/* Page table settings */
+
 
 /* ==========================================================================
    MENU BAR
@@ -68,6 +76,7 @@ img.sectImgs{
 #menuContainer{
   width: auto;
   height: auto;
+  padding: 0px 9% 0px 9%;
 }
 #menubar {
   border-bottom-left-radius: 25px;
@@ -75,13 +84,11 @@ img.sectImgs{
   position:static;
   top: 0;
   width: 100%;
-
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  opacity: 0.9;
+  /* background-color: #333; */
 }
 li {
     float:left;
@@ -140,6 +147,42 @@ img.eduImgs{
 }
 
 /* ============================================================= */
+/* Skills Section */
+
+.skillTableHeader{
+  outline-style: dashed;
+  outline-color: #696969;
+}
+
+.skillsetSkill{
+  list-style-type: none;
+
+}
+table.skillsTable1, table.skillsTable2{
+  padding: 10px 10px 10px 10px;
+}
+table.skillsTable1 tr, table.skillsTable2 tr{
+  text-align: center;
+}
+table.skillsTable1 td{
+  display: block;
+  float: right;
+  padding: 10px;
+}
+table.skillsTable2 td{
+  display: block;
+  float: left;
+  padding: 10px;
+}
+td.skillImg{
+width: 50px;
+}
+td.skillName{
+
+}
+td.skillProf{
+
+}
 
 
 /* ============================================================= */
@@ -155,7 +198,7 @@ img.eduImgs{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  /* background-color: #333; */
   opacity: 0.9;
 }
 /* ==== FOOTER SOCIAL ===*/
@@ -173,14 +216,12 @@ ul.footSocial li img{
   padding: 10px;
 }
 /* ==== FOOTER BOTTOM ===*/
-#footBottom{
-  text-align: center;
-}
 .footBottom{
   height: 30px;
   color: whitesmoke;
   padding: 0px;
   margin: 0px;
+  width: auto;
 }
 #crLeft {
   float: right;
