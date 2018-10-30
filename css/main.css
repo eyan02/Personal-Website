@@ -45,9 +45,12 @@ h1{
   padding: 30px 0px 0px 0px;
 }
 h2,h3,h4,h5,h6{
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: bold;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+h2{
+  padding-top: 100px;
 }
 p{
   margin: 1em;
@@ -60,9 +63,9 @@ img.sectImgs{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
   max-width: 200px;
   opacity: .7;
+  padding-bottom: 30px;
 }
 
 /* Page table settings */
@@ -161,29 +164,37 @@ img.eduImgs{
 table.skillsTable1, table.skillsTable2{
   padding: 10px 10px 10px 10px;
 }
-table.skillsTable1 tr, table.skillsTable2 tr{
-  text-align: center;
+table.skillsTable1 tr td{
+  border-bottom: 2px solid lightgrey;
+  border-right: 2px dashed lightgrey;
 }
-table.skillsTable1 td{
+table.skillsTable2 tr td{
+  border-bottom: 2px solid lightgrey;
+  border-left: 2px dashed lightgrey;
+
+}
+table.skillsTable1 tr td{
   display: block;
   float: right;
   padding: 10px;
 }
-table.skillsTable2 td{
+table.skillsTable2 tr td{
   display: block;
   float: left;
   padding: 10px;
 }
-td.skillImg{
+img.skillImg{
 width: 50px;
 }
 td.skillName{
-
-}
-td.skillProf{
-
+height: 50px;
 }
 
+@media screen and (max-width: 800px) {
+  .skillsTable1,.skillsTable2 {
+    width: 50%;
+  }
+}
 
 /* ============================================================= */
 
