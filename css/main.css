@@ -17,14 +17,14 @@ html {
     font-family: sans-serif;
 
 /* background image settings */
-    background: url("https://raw.githubusercontent.com/eyan02/Personal-Website/0bca7006cd40d3cd906b191d970a4f3d046341af/img/Theme%20background.png") no-repeat center center fixed;
+    background: url('../img/background.png') no-repeat center center fixed;
+    background:
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
-div.foreground {
+div.foregroundTop {
   background-color: whitesmoke;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -35,8 +35,24 @@ div.foreground {
   margin-left: 7.5%;
   margin-right: 7.5%;
   background: rgba(255, 255, 255, 0.78);
+  margin-bottom: 30px;
 }
-
+div.foregroundMid {
+  background-color: whitesmoke;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  max-width: 85%;
+  height: 100%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  background: rgba(255, 255, 255, 0.78);
+  margin-bottom: 30px;
+}
+section.secSpacer{
+  margin-bottom: 50px;
+}
 /* Page text settings */
 h1{
   text-align: center;
@@ -50,7 +66,7 @@ h2,h3,h4,h5,h6{
   font-weight: bold;
 }
 h2{
-  padding-top: 100px;
+  padding-top: 50px;
 }
 p{
   margin: 1em;
@@ -64,7 +80,7 @@ img.sectImgs{
   margin-left: auto;
   margin-right: auto;
   max-width: 200px;
-  opacity: .7;
+  opacity: .8;
   padding-bottom: 30px;
 }
 
@@ -126,8 +142,9 @@ li a:hover {
 
 #eduList{
 }
-.eduSchools {
+div.eduSchools {
   display: block;
+  min-width: 310px;
 }
 .eduImgCap {
   text-align: center;
@@ -152,26 +169,10 @@ img.eduImgs{
 /* ============================================================= */
 /* Skills Section */
 
-.skillTableHeader{
-  outline-style: dashed;
-  outline-color: #696969;
-}
-
-.skillsetSkill{
-  list-style-type: none;
-
-}
 table.skillsTable1, table.skillsTable2{
-  padding: 10px 10px 10px 10px;
-}
-table.skillsTable1 tr td{
-  border-bottom: 2px solid lightgrey;
-  border-right: 2px dashed lightgrey;
-}
-table.skillsTable2 tr td{
-  border-bottom: 2px solid lightgrey;
-  border-left: 2px dashed lightgrey;
-
+  padding: 0px 30px 10px 30px;
+  min-width: 340px;
+  margin-bottom: 40px;
 }
 table.skillsTable1 tr td{
   display: block;
@@ -190,13 +191,29 @@ td.skillName{
 height: 50px;
 }
 
+/* Table borders */
+table.skillsTable1 tr td{
+  border-bottom: 8px double #D3D3D3;
+  border-right: 3px inset #D3D3D3;
+}
+table tr td.tableImg1 {
+  border-bottom-right-radius: 25px;
+}
+table.skillsTable2 tr td{
+  border-bottom: 8px double #D3D3D3;
+  border-left: 3px outset #D3D3D3;
+}
+table tr td.tableImg2 {
+  border-bottom-left-radius: 25px;
+}
+
 @media screen and (max-width: 800px) {
   .skillsTable1,.skillsTable2 {
     width: 50%;
   }
 }
 
-/* ============================================================= */
+/* ======================================================================== */
 
 
 /* ==========================================================================
@@ -227,19 +244,34 @@ ul.footSocial li img{
   padding: 10px;
 }
 /* ==== FOOTER BOTTOM ===*/
-.footBottom{
+#footBottom{
+  text-align: center;
+  max-height: 300px;
+}
+ul.footBottom li p{
   height: 30px;
   color: whitesmoke;
   padding: 0px;
   margin: 0px;
-  width: auto;
+  width: 130px;
+}
+
+ul.footBottom{
+  list-style-type: none;
+  display: inline-block;
+  height: 40px;
+  margin-bottom: 0px;
 }
 #crLeft {
   float: right;
+  margin-right: 20px;
 }
 #crRight{
   float: left;
+  margin-left: 20px;
 }
+
+
 
 
 
