@@ -14,8 +14,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    font-family: sans-serif;
-
+    font-family: HKGrotesk;
 /* background image settings */
     background: url('../img/background.png') no-repeat center center fixed;
     background:
@@ -24,6 +23,11 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
+@font-face{
+  font-family: HKGrotesk;
+  src: url('../fonts/HKGrotesk-Regular.otf');
+}
+
 div.foregroundTop {
   background-color: whitesmoke;
   border-top-left-radius: 25px;
@@ -56,13 +60,13 @@ section.secSpacer{
 /* Page text settings */
 h1{
   text-align: center;
-  font-family: arial;
+  font-family: HKGrotesk;
   font-weight: bold;
   padding: 30px 0px 0px 0px;
 }
 h2,h3,h4,h5,h6{
   text-align: center;
-  font-family: sans-serif;
+  font-family: HKGrotesk;
   font-weight: bold;
 }
 h2{
@@ -70,8 +74,11 @@ h2{
 }
 p{
   margin: 1em;
-  font-family: sans-serif;
+  font-family: HKGrotesk;
 
+}
+td{
+  font-family: HKGrotesk;
 }
 
 /* Page image settings */
@@ -123,6 +130,7 @@ li a {
     text-align: center;
     padding: 14px 16px 5px 16px;
     text-decoration: none;
+    font-family: HKGrotesk;
 }
 #home{
   padding-left: 10px;
@@ -138,6 +146,13 @@ li a:hover {
 /* ==========================================================================
    ABOUT PAGE SECTIONS
    ========================================================================== *
+/* About Section */
+p.aboutOpener{
+  font-size: 16px;
+}
+
+
+
 /* Education Section */
 
 #eduList{
@@ -146,10 +161,13 @@ div.eduSchools {
   display: block;
   min-width: 310px;
 }
-.eduImgCap {
+p.eduImgCap {
   text-align: center;
   margin: 0px;
   font-style: italic;
+}
+p.eduImgCap b{
+  font-size: 16px;
 }
 img.eduImgs{
   display: block;
