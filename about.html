@@ -30,10 +30,10 @@
   <!-- Add your site or application content here -->
   <div id="menuContainer">
     <ul id="menubar">
-      <li id="home"><a href="default.asp">Home</a></li>
-      <li class="active"><a href="about.asp">About</a></li>
-      <li><a href="work.asp">Work</a></li>
-      <li id="contact"><a href="contact.asp">Contact</a></li>
+      <li id="home"><a href="index.html">Home</a></li>
+      <li class="active"><a href="about.html">About</a></li>
+      <li><a id="work">Work</a></li>
+      <li id="contact"><a href="contact.html">Contact</a></li>
 
     </ul>
   </div>
@@ -56,36 +56,42 @@ blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah 
 <!-- ============ Education Section ============== -->
   <div class="foregroundMid">
     <section class="secSpacer">
-      <div class="row">
-        <div>
-          <h2>Education</h2>
-          <img data-aos="fade-in" data-aos-duration="500" data-aos-offset="200" class="sectImgs" alt="edu section" src="img/aboutSections/edu2alt.png"/>
+      <div class="container">
+        <div class="row">
+          <div>
+            <h2>Education</h2>
+          </div>
+          <div class="sect">
+            <img class="sectImgs" data-aos="fade-in" data-aos-duration="500" data-aos-offset="200" alt="edu section" src="img/aboutSections/edu2alt.png"/>
+          </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="one-half column">
-          <div data-aos="fade-left" data-aos-duration="500" data-aos-offset="300">
-            <div class="eduSchools">
-              <img class="eduImgs" alt="duke crest" src="img/schoolCrests/DukeCrest.png"/>
-              <div>
-                <p class="eduImgCap"><b>Duke University</b></p>
-                <p class="eduImgCap"><b>Durham, NC</b></p>
-                <p class="eduImgCap">Masters in Global Health</p>
-                <p class="eduImgCap">Cert. in Data Science</p>
+        <div class="row">
+          <div class="one-half column">
+            <div data-aos="fade-right" data-aos-duration="500" data-aos-offset="300">
+              <div class="eduSchools">
+                <img class="eduImgs" alt="duke crest" src="img/schoolCrests/DukeCrest.png"/>
+                <img class="eduShadow" alt="duke shadow" src="img/schoolCrests/shadow.png"/>
+                <div>
+                  <p class="eduImgCap"><b>Duke University</b></p>
+                  <p class="eduImgCap"><b>Durham, NC</b></p>
+                  <p class="eduImgCap">Masters in Global Health</p>
+                  <p class="eduImgCap">Cert. in Data Science</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="one-half column">
-          <div data-aos="fade-right" data-aos-duration="500" data-aos-offset="300">
-            <div class="eduSchools">
-              <img class="eduImgs" alt="wes crest" src="img/schoolCrests/WesCrest.png"/>
-              <div>
-                <p class="eduImgCap"><b>Wesleyan University</b></p>
-                <p class="eduImgCap"><b>Middletown, CT</b></p>
-                <p class="eduImgCap">Bachelors in Molecular Biology</p>
-                <p class="eduImgCap">& Biochemistry</p>
+          <div class="one-half column">
+            <div data-aos="fade-left" data-aos-duration="500" data-aos-offset="300">
+              <div class="eduSchools">
+                <img class="eduImgs" alt="wes crest" src="img/schoolCrests/WesCrest.png"/>
+                <img class="eduShadow" alt="wes shadow" src="img/schoolCrests/shadow.png"/>
+                <div>
+                  <p class="eduImgCap"><b>Wesleyan University</b></p>
+                  <p class="eduImgCap"><b>Middletown, CT</b></p>
+                  <p class="eduImgCap">Bachelors in Molecular Biology</p>
+                  <p class="eduImgCap">& Biochemistry</p>
+                </div>
               </div>
             </div>
           </div>
@@ -96,10 +102,14 @@ blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah 
 <!-- ============ Skills Section ============== -->
   <div class="foregroundMid">
     <section>
-      <div class="row">
-        <div>
-          <h2>Skills</h2>
-          <img class="sectImgs" alt="skills section" src="img/aboutSections/skills.png" data-aos="fade-in" data-aos-duration="500" data-aos-offset="100"/>
+      <div class="container">
+        <div class="row">
+          <div>
+            <h2>Skills</h2>
+          </div>
+          <div class="sect">
+            <img class="sectImgs" alt="skills section" src="img/aboutSections/skills.png" data-aos="fade-in" data-aos-duration="500" data-aos-offset="100"/>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -110,24 +120,24 @@ blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah 
                 <h5 data-aos="flip-down" data-aos-duration="600" data-aos-offset="200"><b>Biology & Biostatistics</b></h5>
               </tr>
               <tr>
-                <td class="tableImg1" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <td class="tableImg1" data-aos="flip-left" data-aos-duration="600" data-aos-offset="200">
                   <img class="skillImg" alt="Biochemical Interactions" src="img/skills/biochem.png"/></td>
-                <td data-aos="flip-down" data-aos-duration="600" class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Biochemical Pathways</td>
+                <td class="skillName" data-aos="fade-right" data-aos-duration="600" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Biochemical Pathways</td>
               </tr>
               <tr>
-                <td class="tableImg1" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <td class="tableImg1" data-aos="flip-left" data-aos-duration="600" data-aos-offset="200">
                   <img class="skillImg" alt="Regression Analysis" src="img/skills/regress.png"/></td>
-                <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Regression Analysis</td>
+                <td class="skillName" data-aos="fade-right" data-aos-duration="600" data-aos-offset="200">Regression Analysis</td>
               </tr>
               <tr>
-                <td class="tableImg1" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <td class="tableImg1" data-aos="flip-left" data-aos-duration="600" data-aos-offset="200">
                   <img class="skillImg" alt="Data Modeling" src="img/skills/datamodel.png"/></td>
-                <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Data Modeling</td>
+                <td class="skillName" data-aos="fade-right" data-aos-duration="600" data-aos-offset="200">Data Modeling</td>
               </tr>
               <tr>
-                <td class="tableImg1" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <td class="tableImg1" data-aos="flip-left" data-aos-duration="600" data-aos-offset="200">
                   <img class="skillImg" alt="Biometry" src="img/skills/biometry.png"/></td>
-                <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Biometry</td>
+                <td class="skillName" data-aos="fade-right" data-aos-duration="600" data-aos-offset="200">Biometry</td>
               </tr>
             </table>
           </div>
@@ -139,24 +149,24 @@ blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah 
                 <h5 data-aos="flip-down" data-aos-duration="600" data-aos-offset="200"><b>Computer Programming</b></h5>
               </tr>
               <tr>
-                <td class="tableImg2" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <td class="tableImg2" data-aos="flip-right" data-aos-duration="600" data-aos-offset="200">
                   <img class="skillImg" alt="Front-End Development" src="img/skills/webdev.png"/></td>
-                <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Front-End Development</td>
+                <td class="skillName" data-aos="fade-left" data-aos-duration="600" data-aos-offset="200">Front-End Development</td>
               </tr>
               <tr>
-                <td class="tableImg2" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <td class="tableImg2" data-aos="flip-right" data-aos-duration="600" data-aos-offset="200">
                   <img class="skillImg" alt="AI & Machine Learning" src="img/skills/aimachine.png"/></td>
-                <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">AI & Machine Learning</td>
+                <td class="skillName" data-aos="fade-left" data-aos-duration="600" data-aos-offset="200">AI & Machine Learning</td>
               </tr>
-              <tr>
-                <td class="tableImg2" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <tr>
+                <td class="tableImg2" data-aos="flip-right" data-aos-duration="600" data-aos-offset="200">
                   <img class="skillImg" alt="Cloud Computing" src="img/skills/cloudcomp.png"/></td>
-                <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Cloud Computing</td>
+                <td class="skillName" data-aos="fade-left" data-aos-duration="600" data-aos-offset="200">Cloud Computing</td>
               </tr>
               <tr>
-                <td class="tableImg2" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <td class="tableImg2" data-aos="flip-right" data-aos-duration="600" data-aos-offset="200">
                   <img class="skillImg" alt="Data Science" src="img/skills/datasci.png"/></td>
-                <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Data Science</td>
+                <td class="skillName" data-aos="fade-left" data-aos-duration="600" data-aos-offset="200">Data Science</td>
               </tr>
             </table>
           </div>
@@ -168,10 +178,14 @@ blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah 
 <!-- ============ Hobby Section ============== -->
   <div class="foregroundMid">
     <section class="secSpacer">
-      <div class="row">
-        <div>
-          <h2>Hobbies</h2>
-          <img data-aos="fade-in" data-aos-duration="500" class="sectImgs" alt="hobby section" src="img/aboutSections/hobbies.png"/>
+      <div class="container">
+        <div class="row">
+          <div>
+            <h2>Hobbies</h2>
+          </div>
+          <div class="sect">
+            <img data-aos="fade-in" data-aos-duration="500" class="sectImgs" alt="hobby section" src="img/aboutSections/hobbies.png"/>
+          </div>
         </div>
       </div>
     </section>

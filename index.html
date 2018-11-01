@@ -14,6 +14,12 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <!-- JS -->
+  <script src="js/aos.js"></script>
+
 </head>
 
 <body>
@@ -22,8 +28,202 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <h1>TEST PAGE TEST TEST ETT TEST</h1>
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div id="menuContainer">
+    <ul id="menubar">
+      <li id="home" class="active"><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a id="work">Work</a></li>
+      <li id="contact"><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </div>
+
+  <div class="foregroundTop">
+    <section class="secSpacer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h1>Hello there!</h1>
+            <p class="aboutOpener">This is a welcome page, it covers all the info about me, where i can talk about stuff. but there is nothing to put here for now, so here is some filler text. blah blah blah, RIP Mac Miller, blah blah blah
+blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!-- ============ Education Section ============== -->
+<div class="foregroundMid">
+  <section class="secSpacer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2>Education</h2>
+        </div>
+        <div class="sect">
+          <img class="sectImgs" data-aos="fade-in" data-aos-duration="500" data-aos-offset="200" alt="edu section" src="img/aboutSections/edu2alt.png"/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="one-half column">
+          <div data-aos="fade-right" data-aos-duration="500" data-aos-offset="300">
+            <div class="eduSchools">
+              <img class="eduImgs" alt="duke crest" src="img/schoolCrests/DukeCrest.png"/>
+              <img class="eduShadow" alt="duke shadow" src="img/schoolCrests/shadow.png"/>
+              <div>
+                <p class="eduImgCap"><b>Duke University</b></p>
+                <p class="eduImgCap"><b>Durham, NC</b></p>
+                <p class="eduImgCap">Masters in Global Health</p>
+                <p class="eduImgCap">Cert. in Data Science</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="one-half column">
+          <div data-aos="fade-left" data-aos-duration="500" data-aos-offset="300">
+            <div class="eduSchools">
+              <img class="eduImgs" alt="wes crest" src="img/schoolCrests/WesCrest.png"/>
+              <img class="eduShadow" alt="wes shadow" src="img/schoolCrests/shadow.png"/>
+              <div>
+                <p class="eduImgCap"><b>Wesleyan University</b></p>
+                <p class="eduImgCap"><b>Middletown, CT</b></p>
+                <p class="eduImgCap">Bachelors in Molecular Biology</p>
+                <p class="eduImgCap">& Biochemistry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- ============ Skills Section ============== -->
+<div class="foregroundMid">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2>Skills</h2>
+          <img class="sectImgs" alt="skills section" src="img/aboutSections/skills.png" data-aos="fade-in" data-aos-duration="500" data-aos-offset="100"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <div>
+          <table style="width:100%" class="skillsTable1">
+            <tr>
+              <h5 data-aos="flip-down" data-aos-duration="600" data-aos-offset="200"><b>Biology & Biostatistics</b></h5>
+            </tr>
+            <tr>
+              <td class="tableImg1" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <img class="skillImg" alt="Biochemical Interactions" src="img/skills/biochem.png"/></td>
+              <td data-aos="flip-down" data-aos-duration="600" class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Biochemical Pathways</td>
+            </tr>
+            <tr>
+              <td class="tableImg1" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <img class="skillImg" alt="Regression Analysis" src="img/skills/regress.png"/></td>
+              <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Regression Analysis</td>
+            </tr>
+            <tr>
+              <td class="tableImg1" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <img class="skillImg" alt="Data Modeling" src="img/skills/datamodel.png"/></td>
+              <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Data Modeling</td>
+            </tr>
+            <tr>
+              <td class="tableImg1" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <img class="skillImg" alt="Biometry" src="img/skills/biometry.png"/></td>
+              <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Biometry</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="one-half column">
+        <div>
+          <table style="width:100%" class="skillsTable2">
+            <tr>
+              <h5 data-aos="flip-down" data-aos-duration="600" data-aos-offset="200"><b>Computer Programming</b></h5>
+            </tr>
+            <tr>
+              <td class="tableImg2" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <img class="skillImg" alt="Front-End Development" src="img/skills/webdev.png"/></td>
+              <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Front-End Development</td>
+            </tr>
+            <tr>
+              <td class="tableImg2" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <img class="skillImg" alt="AI & Machine Learning" src="img/skills/aimachine.png"/></td>
+              <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">AI & Machine Learning</td>
+            </tr>
+              <tr>
+              <td class="tableImg2" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <img class="skillImg" alt="Cloud Computing" src="img/skills/cloudcomp.png"/></td>
+              <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Cloud Computing</td>
+            </tr>
+            <tr>
+              <td class="tableImg2" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">
+                <img class="skillImg" alt="Data Science" src="img/skills/datasci.png"/></td>
+              <td class="skillName" data-aos="flip-down" data-aos-duration="600" data-aos-offset="200">Data Science</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ Hobby Section ============== -->
+<div class="foregroundMid">
+  <section class="secSpacer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2>Hobbies</h2>
+          <img data-aos="fade-in" data-aos-duration="500" class="sectImgs" alt="hobby section" src="img/aboutSections/hobbies.png"/>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ Footer Section ============= -->
+<footer id="footer">
+  <div class="row">
+    <div class="twleve columns" id="footSocial">
+      <ul class="footSocial">
+        <li>
+          <img src="img/footer/github.png"/>
+        </li>
+        <li>
+          <img src="img/footer/linkedin.png"/>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twleve columns" id="footBottom">
+      <ul class="footBottom">
+        <li>
+          <p id="crLeft">Code to Create</p>
+        </li>
+        <li>
+          <p id="crRight">Erik Yan 2018 ©</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- =================================================================
+================================================================== -->
+
+<script>
+  AOS.init({
+    easing: 'ease-in-out-sine'
+  })
+</script>
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>

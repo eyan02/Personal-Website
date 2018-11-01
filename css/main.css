@@ -62,15 +62,17 @@ h1{
   text-align: center;
   font-family: HKGrotesk;
   font-weight: bold;
-  padding: 30px 0px 0px 0px;
+  padding: 50px 0px 0px 0px;
+  overflow: hidden;
 }
 h2,h3,h4,h5,h6{
   text-align: center;
   font-family: HKGrotesk;
   font-weight: bold;
+  overflow:hidden;
 }
 h2{
-  padding-top: 50px;
+  padding: 50px 0px 0px 0px;
 }
 p{
   margin: 1em;
@@ -81,15 +83,63 @@ td{
   font-family: HKGrotesk;
 }
 
+ h1::before, h1::after {
+   content: "";
+   display: inline-block;
+   height: 15px;
+   position: relative;
+   vertical-align: middle;
+   border-top: 4px ridge darkblue;
+   border-radius: 25px;
+   width: 50%;
+}
+h1::before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h1::after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
+h2::before, h2::after {
+content: "";
+display: inline-block;
+height: 15px;
+position: relative;
+vertical-align: middle;
+border-top: 4px ridge darkblue;
+border-radius: 25px;
+width: 50%;
+}
+h2::before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h2::after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
 /* Page image settings */
+/* div.sect{
+  border-left: 24px double whitesmoke;
+  border-right: 24px  double whitesmoke;
+} */
 img.sectImgs{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 200px;
+  max-width: 160px;
   opacity: .8;
-  padding-bottom: 30px;
+  padding:4px;
+
+  border-radius: 50%;
+  border: 8px solid whitesmoke;
+  border-left-color: darkblue;
+  border-right-color: darkblue;
 }
+
 
 /* Page table settings */
 
@@ -120,7 +170,7 @@ li {
     float:left;
 }
 
-li#contact{
+#contact{
     float: right;
     padding-right: 10px;
 }
@@ -134,6 +184,11 @@ li a {
 }
 #home{
   padding-left: 10px;
+}
+#work{
+  color: grey;
+  text-emphasis-color: grey;
+  opacity:0.8;
 }
 /* Changes link color to #111 (black) on hover */
 li a:hover {
@@ -149,6 +204,7 @@ li a:hover {
 /* About Section */
 p.aboutOpener{
   font-size: 16px;
+  text-align: justify;
 }
 
 
@@ -161,6 +217,10 @@ div.eduSchools {
   display: block;
   min-width: 310px;
 }
+.eduSchools div{
+  background: linear-gradient(to top, rgba(0,0,0,.05), rgba(0,0,0,0));
+  border-radius: 10px 10px 15px 15px;
+  }
 p.eduImgCap {
   text-align: center;
   margin: 0px;
@@ -176,7 +236,15 @@ img.eduImgs{
   max-width: 100px;
   margin-top: 20px;
 }
-
+img.eduShadow{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
 /* edu AOS animation */
 @media screen and (max-width: 800px) {
   .aos-item {
@@ -188,7 +256,7 @@ img.eduImgs{
 /* Skills Section */
 
 table.skillsTable1, table.skillsTable2{
-  padding: 0px 30px 10px 30px;
+  padding: 0px 10px 10px 10px;
   min-width: 340px;
   margin-bottom: 40px;
 }
@@ -205,21 +273,24 @@ table.skillsTable2 tr td{
 img.skillImg{
 width: 50px;
 }
+td.tableImg1, td.tableImg2{
+  background: linear-gradient(to top, rgba(0,0,0,.15), rgba(0,0,0,0));
+}
 td.skillName{
 height: 50px;
 }
 
 /* Table borders */
 table.skillsTable1 tr td{
-  border-bottom: 8px double #D3D3D3;
-  border-right: 3px inset #D3D3D3;
+  border-bottom: 8px double darkblue;
+  border-right: 3px inset darkblue;
 }
 table tr td.tableImg1 {
   border-bottom-right-radius: 25px;
 }
 table.skillsTable2 tr td{
-  border-bottom: 8px double #D3D3D3;
-  border-left: 3px outset #D3D3D3;
+  border-bottom: 8px double darkblue;
+  border-left: 3px outset darkblue;
 }
 table tr td.tableImg2 {
   border-bottom-left-radius: 25px;
