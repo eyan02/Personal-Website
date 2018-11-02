@@ -7,7 +7,7 @@
  */
 
 /* ==========================================================================
-   BACKGROUND & PAGE
+   B A C K G R O U N D   &   P A G E
    ========================================================================== */
 
 html {
@@ -26,6 +26,10 @@ html {
 @font-face{
   font-family: HKGrotesk;
   src: url('../fonts/HKGrotesk-Regular.otf');
+}
+@font-face{
+  font-family: HKGroteskBold;
+  src: url('../fonts/HKGrotesk-BoldLegacy.otf');
 }
 
 div.foregroundTop {
@@ -60,14 +64,14 @@ section.secSpacer{
 /* Page text settings */
 h1{
   text-align: center;
-  font-family: HKGrotesk;
+  font-family: HKGroteskBold;
   font-weight: bold;
   padding: 50px 0px 0px 0px;
   overflow: hidden;
 }
 h2,h3,h4,h5,h6{
   text-align: center;
-  font-family: HKGrotesk;
+  font-family: HKGroteskBold;
   font-weight: bold;
   overflow:hidden;
 }
@@ -77,7 +81,10 @@ h2{
 p{
   margin: 1em;
   font-family: HKGrotesk;
-
+}
+p.homeOpener, p.contactOpener{
+  font-size: 16px;
+  text-align: center;
 }
 td{
   font-family: HKGrotesk;
@@ -145,7 +152,7 @@ img.sectImgs{
 
 
 /* ==========================================================================
-   MENU BAR
+   M E N U     B A R
    ========================================================================== */
 
 /* menu settings*/
@@ -199,23 +206,173 @@ li a:hover {
 }
 
 /* ==========================================================================
-   ABOUT PAGE SECTIONS
+   H O M E     P A G E
    ========================================================================== *
-/* About Section */
+
+/* Home About Section */
+table.homeSkillsTable1, table.homeSkillsTable2{
+  padding: 35px 0px 10px 0px;
+  min-width: 240px;
+  margin-bottom: 40px;
+}
+table.homeSkillsTable1 tr td{
+  display: block;
+  float: right;
+  padding: 1px;
+}
+table.homeSkillsTable2 tr td{
+  display: block;
+  float: left;
+  padding: 1px;
+}
+img.homeSkillsTableImg{
+width: 50px;
+}
+#homeAboutRow1L{
+position: relative;
+top: -15px;
+}
+#homeAboutRow1R{
+position: relative;
+top: -15px;
+}
+#homeAboutRow2L{
+position: relative;
+top: -80px;
+right: 5px;
+}
+#homeAboutRow2R{
+position: relative;
+top: -80px;
+left: 5px;
+}
+#homeAboutRow3L{
+position: relative;
+top: -165px;
+left: 30px;
+}
+#homeAboutRow3R{
+position: relative;
+top: -165px;
+right: 30px;
+}
+/* About Skills Table borders */
+table.homeSkillsTable1 tr td, table.homeSkillsTable2 tr td{
+  border: 8px double darkblue;
+}
+table tr.homeSkillsTableImg1 td, table tr.homeSkillsTableImg2 td, table tr.homeSkillsSubTableImg1 td, table tr.homeSkillsSubTableImg2 td{
+  border-radius: 50px;
+}
+
+
+img.homeSkillsTableSubImg{
+width: 25px;
+}
+#homeAboutSubRow1L{
+position: relative;
+top: -15px;
+}
+#homeAboutSubRow1R{
+position: relative;
+top: -15px;
+}
+#homeAboutSubRow2L{
+position: relative;
+top: -18px;
+right: 15px;
+}
+#homeAboutSubRow2R{
+position: relative;
+top: -18px;
+left: 15px;
+}
+#homeAboutSubRow3L{
+position: relative;
+top: -55px;
+right: 12px;
+}
+#homeAboutSubRow3R{
+position: relative;
+top: -55px;
+left: 12px;
+}
+table tr.homeSkillsSubTableImg1 td, table tr.homeSkillsSubTableImg2 td{
+  border: 2px solid darkblue;
+  padding: 1px;
+}
+
+
+
+
+/* Home Work Section */
+div.homeWorkSect {
+  display: block;
+}
+p.homeWorkImgCap {
+  text-align: center;
+  margin: 0px;
+  font-style: italic;
+  padding: 0px 10px 0px 10px;
+}
+p.homeWorkImgCap b{
+  font-size: 16px;
+}
+p.comingSoon{
+  position: relative;
+  margin:0;
+  font-size: 45px;
+  color: grey;
+  text-align: center;
+  top:100px;
+  z-index: 1;
+  max-height: 1px;
+}
+img.homeWorkImgs{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  margin-top: 5px;
+  border-radius: 50px;
+  border-bottom: 1px outset lightgrey;
+  border-left: 1px inset whitesmoke;
+  opacity: 0.8;
+}
+img.homeWorkShadow{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  margin-top: 5px;
+  opacity: 0.5;
+}
+@media (max-width: 740px) {
+  img.homeWorkImgs{
+    max-width: 410px;
+}
+  img.homeWorkShadow{
+    max-width: 400px;
+}
+p.comingSoon{
+  font-size: 35px;
+  top:80px;
+}
+}
+/* Home Contact Section */
+
+
+/* ==========================================================================
+   A B O U T    P A G E
+   ========================================================================== *
+/* About Opener Section */
 p.aboutOpener{
   font-size: 16px;
   text-align: justify;
 }
 
-
-
 /* Education Section */
-
-#eduList{
-}
 div.eduSchools {
   display: block;
-  min-width: 310px;
 }
 .eduSchools div{
   background: linear-gradient(to top, rgba(0,0,0,.05), rgba(0,0,0,0));
@@ -224,17 +381,28 @@ div.eduSchools {
 p.eduImgCap {
   text-align: center;
   margin: 0px;
+  font-style: ;
+  font-family: Times;
   font-style: italic;
+  font-size: 16px;
 }
 p.eduImgCap b{
-  font-size: 16px;
+  font-size: 22px;
+  font-family: HKGroteskBold;
+  font-style: normal;
 }
 img.eduImgs{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100px;
+  max-width: 120px;
   margin-top: 20px;
+
+  /* animation */
+  animation: crestMoveUpDown 1.2s linear infinite;
+  animation-delay: 1s;
+  bottom: 0;
+  position: relative;
 }
 img.eduShadow{
   display: block;
@@ -243,21 +411,33 @@ img.eduShadow{
   max-width: 100px;
   margin-top: 5px;
   margin-bottom: 15px;
-  opacity: 0.5;
 }
-/* edu AOS animation */
-@media screen and (max-width: 800px) {
-  .aos-item {
-    width: 50%;
+@media (max-width: 740px) {
+  img.eduImgs{
+    max-width: 100px;
+  }
+  img.eduShadow{
+    max-width: 90px;
+  }
+  p.eduImgCap {
+    font-size: 14px;
+  }
+  p.eduImgCap b{
+    font-size: 16px;
   }
 }
+@keyframes crestMoveUpDown {0%, 100% {bottom: 0;} 50% {bottom: 5px;}}
+/* Safari*/
+@-webkit-keyframes MoveUpDown {0%, 100% {bottom: 0;} 50% {bottom: 5px;}}
+/* Firefox*/
+@-moz-keyframes MoveUpDown {0%, 100% {bottom: 0;} 50% {bottom: 5px;}}
 
 /* ============================================================= */
 /* Skills Section */
 
 table.skillsTable1, table.skillsTable2{
   padding: 0px 10px 10px 10px;
-  min-width: 340px;
+  min-width: 300px;
   margin-bottom: 40px;
 }
 table.skillsTable1 tr td{
@@ -271,19 +451,20 @@ table.skillsTable2 tr td{
   padding: 10px;
 }
 img.skillImg{
-width: 50px;
+max-width: 40px;
 }
 td.tableImg1, td.tableImg2{
-  background: linear-gradient(to top, rgba(0,0,0,.15), rgba(0,0,0,0));
+  background: linear-gradient(to top, rgba(0,0,0,.09), rgba(0,0,0,0));
 }
 td.skillName{
-height: 50px;
+height: 40px;
 }
 
-/* Table borders */
+/* About Skills Table borders */
 table.skillsTable1 tr td{
   border-bottom: 8px double darkblue;
   border-right: 3px inset darkblue;
+  border-top-right-radius: 10px;
 }
 table tr td.tableImg1 {
   border-bottom-right-radius: 25px;
@@ -291,22 +472,96 @@ table tr td.tableImg1 {
 table.skillsTable2 tr td{
   border-bottom: 8px double darkblue;
   border-left: 3px outset darkblue;
+  border-top-left-radius: 10px;
 }
 table tr td.tableImg2 {
   border-bottom-left-radius: 25px;
 }
 
-@media screen and (max-width: 800px) {
-  .skillsTable1,.skillsTable2 {
-    width: 50%;
+@media (max-width: 740px) {
+  table.skillsTable1, table.skillsTable2{
+    padding: 0px 10px 10px 10px;
+    min-width: 250px;
+    margin-bottom: 40px;
+  }
+  h5 b{
+    font-size:18px;
+  }
+  img.skillImg{
+  width: 30px;
+  }
+  td.skillName{
+  height: 30px;
+  font-size: 12px;
+  }
+  /* About Skills Table borders */
+  table.skillsTable1 tr td{
+    border-bottom: 5px double darkblue;
+    border-right: 2px inset darkblue;
+  }
+  table.skillsTable2 tr td{
+    border-bottom: 5px double darkblue;
+    border-left: 2px outset darkblue;
+  }
+}
+@media (min-width: 1000px) {
+  #aboutSkillsRow1L{
+    position: relative;
+    right: 100px;
+  }
+  #aboutSkillsRow1R{
+    position: relative;
+    left: 100px;
+  }
+  #aboutSkillsRow2L{
+    position: relative;
+    right: 80px;
+  }
+  #aboutSkillsRow2R{
+    position: relative;
+    left: 80px;
+  }
+  #aboutSkillsRow3L{
+    position: relative;
+    right: 60px;
+  }
+  #aboutSkillsRow3R{
+    position: relative;
+    left: 60px;
+  }
+    #aboutSkillsRow4L{
+      position: relative;
+      right: 40px;
+    }
+    #aboutSkillsRow4R{
+      position: relative;
+      left: 40px;
+  }
+  table.skillsTable1 tr td{
+    border-bottom: 5px double darkblue;
+    border-right: 2px inset darkblue;
+
+  }
+  table.skillsTable2 tr td{
+    border-bottom: 5px double darkblue;
+    border-left: 2px outset darkblue;
+
   }
 }
 
 /* ======================================================================== */
 
 
+
 /* ==========================================================================
-   FOOTER
+   C O N T A C T     P A G E
+   ========================================================================== */
+#contactBoard{
+  width: 100%;
+  min-height: 400px;
+}
+/* ==========================================================================
+   F O O T E R
    ========================================================================== */
 #footer{
   border-top-left-radius: 25px;
@@ -328,9 +583,13 @@ ul.footSocial {
   height: 40px;
   margin: 10px 0px 0px 0px;
 }
-ul.footSocial li img{
+ul.footSocial li a{
   max-width: 30px;
-  padding: 10px;
+  max-height: 30px
+}
+ul.footSocial li a img{
+  max-width: 30px;
+  padding: 0px;
 }
 /* ==== FOOTER BOTTOM ===*/
 #footBottom{
