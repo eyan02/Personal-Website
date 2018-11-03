@@ -555,11 +555,21 @@ table tr td.tableImg2 {
   margin-right: auto;
   width: 90%;
   height: 90%;
-  background: url('../img/contactSections/contactBoard/space.png') no-repeat center center fixed;
+  background: url('../img/contactSections/contactBoard/longSpace.png') no-repeat center center fixed;
   border-radius:200px;
   border-left: 5px inset white;
   border-right: 5px outset white;
 }
+@media (max-width: 770px) {
+  .contactSpaceBoard{
+  background: url('../img/contactSections/contactBoard/longSpace.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+}
+
 #contactBoard{
   width: 100%;
   min-height: 400px;
@@ -601,7 +611,23 @@ table.contactTable2 tr td{
 #contactRow2R img{
   width: 50px;
 }
-
+@media (max-width: 770px) {
+  #contactRow1L img{
+    width: 80px;
+  }
+  #contactRow2L img{
+    width: 60px;
+  }
+  #contactRow3L img, #contactRow3R img{
+    width: 30px;
+  }
+  #contactRow1R img{
+    width: 40px;
+  }
+  #contactRow2R img{
+    width: 30px;
+  }
+}
 #contactRow1L{
   position: relative;
   top: -40px;
@@ -629,6 +655,38 @@ table.contactTable2 tr td{
   position: relative;
   top: -135px;
   right: -50px;
+}
+@media (max-width: 770px) {
+  #contactRow1L{
+    position: relative;
+    top: -40px;
+    right: 10px;
+  }
+  #contactRow1R{
+    position: relative;
+    top: -220px;
+    left: 20px;
+  }
+  #contactRow2L{
+    position: relative;
+    top: -360px;
+    right: -20px;
+  }
+  #contactRow2R{
+    position: relative;
+    top: -10px;
+    left: 10px;
+  }
+  #contactRow3L{
+    position: relative;
+    top: -180px;
+    left: 20px;
+  }
+  #contactRow3R{
+    position: relative;
+    top: -135px;
+    right: -50px;
+  }
 }
 /* About Skills Table borders */
 table.contactTable1 tr td, table.contactTable2 tr td{
