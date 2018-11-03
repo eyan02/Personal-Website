@@ -11,17 +11,18 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    font-family: HKGrotesk;
+  min-width: 640px;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: HKGrotesk;
 /* background image settings */
-    background: url('../img/background.png') no-repeat center center fixed;
-    background:
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url('../img/background.png') no-repeat center center fixed;
+  background:
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 @font-face{
   font-family: HKGrotesk;
@@ -82,10 +83,6 @@ p{
   margin: 1em;
   font-family: HKGrotesk;
 }
-p.homeOpener, p.contactOpener{
-  font-size: 16px;
-  text-align: center;
-}
 td{
   font-family: HKGrotesk;
 }
@@ -129,10 +126,6 @@ h2::after {
 }
 
 /* Page image settings */
-/* div.sect{
-  border-left: 24px double whitesmoke;
-  border-right: 24px  double whitesmoke;
-} */
 img.sectImgs{
   display: block;
   margin-left: auto;
@@ -207,8 +200,17 @@ li a:hover {
 
 /* ==========================================================================
    H O M E     P A G E
-   ========================================================================== *
-
+   ========================================================================== */
+p.homeOpener{
+  font-size: 16px;
+  line-height: 200%;
+  text-align: center;
+   }
+@media (min-width: 900px) {
+  p.homeOpener{
+    font-size: 20px;
+  }
+}
 /* Home About Section */
 table.homeSkillsTable1, table.homeSkillsTable2{
   padding: 35px 0px 10px 0px;
@@ -367,9 +369,14 @@ p.comingSoon{
 /* About Opener Section */
 p.aboutOpener{
   font-size: 16px;
+  line-height: 200%;
   text-align: justify;
 }
-
+@media (min-width: 900px) {
+   p.aboutOpener{
+     font-size: 18px;
+   }
+}
 /* Education Section */
 div.eduSchools {
   display: block;
@@ -556,9 +563,115 @@ table tr td.tableImg2 {
 /* ==========================================================================
    C O N T A C T     P A G E
    ========================================================================== */
+#spaceBorder{
+  border-radius: 200px;
+  padding: 20px 0px 20px 0px;
+  margin-bottom:350px;
+  }
+.contactSpaceBoard{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 90%;
+  background: url('../img/contactSections/contactBoard/space.png') no-repeat center center fixed;
+  border-radius:200px;
+  border-left: 5px inset white;
+  border-right: 5px outset white;
+}
 #contactBoard{
   width: 100%;
   min-height: 400px;
+}
+p.contactOpener{
+  font-size: 16px;
+  line-height: 200%;
+  text-align: justify;
+}
+
+table.contactTable1, table.contactTable2{
+  padding: 35px 0px 10px 0px;
+  min-width: 240px;
+  margin-bottom: 40px;
+}
+table.contactTable1 tr td{
+  display: block;
+  float: right;
+  padding: 0px;
+}
+table.contactTable2 tr td{
+  display: block;
+  float: left;
+  padding: 0px;
+}
+
+#contactRow1L img{
+  width: 100px;
+}
+#contactRow2L img{
+  width: 80px;
+}
+#contactRow3L img, #contactRow3R img{
+  width: 30px;
+}
+#contactRow1R img{
+  width: 60px;
+}
+#contactRow2R img{
+  width: 50px;
+}
+
+#contactRow1L{
+  position: relative;
+  top: -40px;
+}
+#contactRow1R{
+  position: relative;
+  top: -220px;
+}
+#contactRow2L{
+  position: relative;
+  top: -360px;
+  right: -20px;
+}
+#contactRow2R{
+  position: relative;
+  top: 50px;
+  left: 5px;
+}
+#contactRow3L{
+  position: relative;
+  top: -180px;
+  left: 20px;
+}
+#contactRow3R{
+  position: relative;
+  top: -135px;
+  right: -50px;
+}
+/* About Skills Table borders */
+table.contactTable1 tr td, table.contactTable2 tr td{
+  border: 2px groove white;
+}
+table tr.contactTableImg1 td, table tr.contactTableImg2 td{
+  border-radius: 75px;
+}
+
+p.contactShoutout{
+  line-height: 200%;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  #contactRow2L{
+    position: relative;
+    top: -320px;
+  }
+  p.contactOpener{
+    font-size: 20px;
+   }
+  p.contactShoutout{
+    font-size: 20px;
+   }
 }
 /* ==========================================================================
    F O O T E R
