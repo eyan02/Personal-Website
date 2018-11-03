@@ -197,6 +197,21 @@ li a:hover {
 .active {
     text-decoration: underline;
 }
+@media (max-width: 360px) {
+li a {
+  font-size: 10px;
+}
+}
+@media (min-width: 370px) {
+li a {
+  font-size: 14px;
+}
+}
+@media (min-width: 700px) {
+li a {
+  font-size: 18px;
+}
+}
 
 /* ==========================================================================
    H O M E     P A G E
