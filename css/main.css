@@ -133,6 +133,8 @@ img.sectImgs{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
   max-width: 160px;
   opacity: .8;
   padding:4px;
@@ -348,16 +350,23 @@ p.comingSoon{
    A B O U T    P A G E
    ========================================================================== *
 /* About Opener Section */
-p.aboutOpener{
-  font-size: 16px;
-  line-height: 200%;
-  text-align: justify;
+#quoteBackground{
+  border-radius: 100px;
+  background: linear-gradient(to left, rgba(0,0,0,.02), rgba(0,0,0,0.01)), rgba(0,0,0,.02);
+  padding: 20px 0px 1px 0px;
+  margin-bottom: 25px;
+  margin-top: 30px;
 }
 p.aboutQuote{
   font-size: 18px;
   line-height: 130%;
   text-align: center;
   font-family: DancingScript;
+}
+p.aboutOpener{
+  font-size: 16px;
+  line-height: 200%;
+  text-align: justify;
 }
 @media (min-width: 700px) {
    p.aboutOpener{
@@ -576,6 +585,10 @@ table tr td.tableImg2 {
   width: 90%;
   height: 90%;
   background: url('../img/contactSections/contactBoard/longSpace.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   border-radius:200px;
   border-left: 5px inset white;
   border-right: 5px outset white;
@@ -583,10 +596,7 @@ table tr td.tableImg2 {
 @media (max-width: 770px) {
   .contactSpaceBoard{
   background: url('../img/contactSections/contactBoard/longSpace.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
   }
 }
 
@@ -723,7 +733,6 @@ p.contactShoutout{
   line-height: 200%;
   text-align: center;
 }
-
 @media (min-width: 900px) {
   #contactRow2L{
     position: relative;
@@ -738,6 +747,31 @@ p.contactShoutout{
    p.contactDisclaimer{
      font-size: 15px;
    }
+}
+p.contactOtherShoutout{
+    text-align: center;
+}
+p.contactOtherShoutout a{
+  font-size: 10px;
+  color: #e6e6e6;
+  opacity: 0.2
+}
+/* unvisited link */
+p.contactOtherShoutout a:link {
+    color: #e6e6e6;
+    opacity: 0.2
+}
+
+/* visited link */
+p.contactOtherShoutout a:visited {
+    color: #e6e6e6;
+    opacity: 0.2
+}
+
+/* mouse over link */
+p.contactOtherShoutout a:hover {
+    color: #e6e6e6;
+    opacity: 0.2
 }
 /* ==========================================================================
    F O O T E R
