@@ -32,32 +32,35 @@ html {
   font-family: HKGroteskBold;
   src: url('../fonts/HKGrotesk-BoldLegacy.otf');
 }
-
+@font-face{
+  font-family: DancingScript;
+  src: url('../fonts/DancingScript-Regular.otf');
+}
 div.foregroundTop {
   background-color: whitesmoke;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   max-width: 85%;
   height: 100%;
   margin-left: 7.5%;
   margin-right: 7.5%;
   background: rgba(255, 255, 255, 0.78);
-  margin-bottom: 30px;
+  margin-bottom: 90px;
 }
 div.foregroundMid {
   background-color: whitesmoke;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   max-width: 85%;
   height: 100%;
   margin-left: 7.5%;
   margin-right: 7.5%;
   background: rgba(255, 255, 255, 0.78);
-  margin-bottom: 30px;
+  margin-bottom: 90px;
 }
 section.secSpacer{
   margin-bottom: 50px;
@@ -153,6 +156,7 @@ img.sectImgs{
   width: auto;
   height: auto;
   padding: 0px 9% 0px 9%;
+  margin-top: 2.5rem;
 }
 #menubar {
   border-bottom-left-radius: 25px;
@@ -161,7 +165,6 @@ img.sectImgs{
   top: 0;
   width: 100%;
   list-style-type: none;
-  margin: 0;
   padding: 0;
   overflow: hidden;
   /* background-color: #333; */
@@ -350,9 +353,26 @@ p.aboutOpener{
   line-height: 200%;
   text-align: justify;
 }
-@media (min-width: 900px) {
+p.aboutQuote{
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  font-family: DancingScript;
+}
+@media (min-width: 700px) {
    p.aboutOpener{
      font-size: 18px;
+   }
+   p.aboutQuote{
+     font-size: 32px;
+   }
+}
+@media (max-width: 350px) {
+   p.aboutOpener{
+     font-size: 14px;
+   }
+   p.aboutQuote{
+     font-size: 16px;
    }
 }
 /* Education Section */
@@ -579,7 +599,10 @@ p.contactOpener{
   line-height: 200%;
   text-align: justify;
 }
-
+p.contactDisclaimer{
+  font-size: 12px;
+  text-align: center;
+}
 table.contactTable1, table.contactTable2{
   padding: 35px 0px 10px 0px;
   min-width: 240px;
@@ -700,6 +723,7 @@ p.contactShoutout{
   line-height: 200%;
   text-align: center;
 }
+
 @media (min-width: 900px) {
   #contactRow2L{
     position: relative;
@@ -710,6 +734,9 @@ p.contactShoutout{
    }
   p.contactShoutout{
     font-size: 20px;
+   }
+   p.contactDisclaimer{
+     font-size: 15px;
    }
 }
 /* ==========================================================================
