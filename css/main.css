@@ -249,33 +249,24 @@ border-radius: 50px;
 margin: 0px 20px 0px 20px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 750px) {
   ul.homeSkills li img{
   width: 40px;
   }
+  ul.homeSkills li img{
+  width: 40px;
+  border: 4px double darkblue;
+  }
 }
-
-/* About Skills Table borders */
-table.homeSkillsTable1 tr td, table.homeSkillsTable2 tr td{
+@media (min-width: 900px) {
+  ul.homeSkills li img{
+  width: 65px;
+  }
+  ul.homeSkills li img{
+  width: 60px;
   border: 8px double darkblue;
-}
-table tr.homeSkillsTableImg1 td, table tr.homeSkillsTableImg2 td, table tr.homeSkillsSubTableImg1 td, table tr.homeSkillsSubTableImg2 td{
-  border-radius: 50px;
-}
-
-
-  #homeAboutRow1L, #homeAboutRow1R, #homeAboutRow2L, #homeAboutRow2R, #homeAboutRow3L, #homeAboutRow3R{
-  position: relative;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  }
-  /* About Skills Table borders */
-  table.homeSkillsTable1 tr td, table.homeSkillsTable2 tr td{
-    border: 2px solid darkblue;
   }
 }
-
 
 /* Home Work Section */
 div.homeWorkSect {
