@@ -591,14 +591,13 @@ table tr td.tableImg2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 100%;
   background: url('../img/contactSections/contactBoard/longSpace.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 100%;
-  box-shadow: 0 0 8px 8px whitesmoke inset;
-
+  background-size: cover;
+  overflow-y: scroll;
 }
 @media (max-width: 770px) {
   .contactSpaceBoard{
