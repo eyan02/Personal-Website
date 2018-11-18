@@ -29,28 +29,32 @@ html {
   src: url('../fonts/DancingScript-Regular.otf');
 }
 div.foregroundTop {
+  display: block;
   background-color: whitesmoke;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  max-width: 85%;
+  width: 85%;
+  max-width: 1200px;
   height: 100%;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+  margin-left: auto;
+  margin-right: auto;
   background: rgba(255, 255, 255, 0.78);
   margin-bottom: 90px;
 }
 div.foregroundMid {
+  display: block;
   background-color: whitesmoke;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  max-width: 85%;
+  width: 85%;
+  max-width: 1200px;
   height: 100%;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+  margin-left: auto;
+  margin-right: auto;
   background: rgba(255, 255, 255, 0.78);
   margin-bottom: 90px;
 }
@@ -90,6 +94,8 @@ td{
    vertical-align: middle;
    border-top: 4px ridge darkblue;
    border-radius: 25px;
+   -moz-border-radius:25px;  /* for Firefox */
+   -webkit-border-radius:25px; /* for Webkit-Browsers */
    width: 50%;
 }
 h1::before {
@@ -109,6 +115,8 @@ position: relative;
 vertical-align: middle;
 border-top: 4px ridge darkblue;
 border-radius: 25px;
+-moz-border-radius:25px;  /* for Firefox */
+-webkit-border-radius:25px; /* for Webkit-Browsers */
 width: 50%;
 }
 h2::before {
@@ -132,6 +140,8 @@ img.sectImgs{
   padding:4px;
 
   border-radius: 50%;
+  -moz-border-radius:50%;  /* for Firefox */
+  -webkit-border-radius:50%; /* for Webkit-Browsers */
   border: 8px solid whitesmoke;
   border-left-color: darkblue;
   border-right-color: darkblue;
@@ -147,7 +157,11 @@ img.sectImgs{
 
 /* menu settings*/
 #menuContainer{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: auto;
+  max-width: 1200px;
   height: auto;
   padding: 0px 9% 0px 9%;
   margin-top: 2.5rem;
@@ -238,6 +252,8 @@ width: 50px;
 padding: 2px;
 border: 2px double darkblue;
 border-radius: 50px;
+-moz-border-radius:50px;  /* for Firefox */
+-webkit-border-radius:50px; /* for Webkit-Browsers */
 margin: 0px 20px 0px 20px;
 }
 
@@ -290,6 +306,8 @@ img.homeWorkImgs{
   max-width: 500px;
   margin-top: 5px;
   border-radius: 50px;
+  -moz-border-radius:50px;  /* for Firefox */
+  -webkit-border-radius:50px; /* for Webkit-Browsers */
   border-bottom: 1px outset lightgrey;
   border-left: 1px inset whitesmoke;
   opacity: 0.8;
@@ -335,6 +353,8 @@ p.comingSoon{
 /* About Opener Section */
 #quoteBackground{
   border-radius: 100px;
+  -moz-border-radius:100px;  /* for Firefox */
+  -webkit-border-radius:100px; /* for Webkit-Browsers */
   background: linear-gradient(to left, rgba(0,0,0,.02), rgba(0,0,0,0.01)), rgba(0,0,0,.02);
   padding: 20px 0px 1px 0px;
   margin-bottom: 25px;
@@ -374,6 +394,8 @@ div.eduSchools {
 .eduSchools div{
   background: linear-gradient(to top, rgba(0,0,0,.05), rgba(0,0,0,0));
   border-radius: 10px 10px 15px 15px;
+  -moz-border-radius:10px 10px 15px 15px;  /* for Firefox */
+  -webkit-border-radius:10px 10px 15px 15px; /* for Webkit-Browsers */
   }
 #eduImgCap{
     padding-bottom: 20px;
@@ -557,29 +579,30 @@ table tr td.tableImg2 {
    C O N T A C T     P A G E
    ========================================================================== */
 #spaceBorder{
-  border-radius: 200px;
   padding: 20px 0px 20px 0px;
-  margin-bottom:350px;
+  margin-bottom:200px;
+  margin-top: 200px;
+  border-radius:20px;
+  -moz-border-radius:20px;  /* for Firefox */
+  -webkit-border-radius:20px; /* for Webkit-Browsers */
+
   }
 .contactSpaceBoard{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  height: 90%;
+  width: 95%;
   background: url('../img/contactSections/contactBoard/longSpace.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  border-radius:200px;
-  border-left: 5px inset white;
-  border-right: 5px outset white;
+  background-size: 100%;
+  box-shadow: 0 0 8px 8px whitesmoke inset;
+
 }
 @media (max-width: 770px) {
   .contactSpaceBoard{
   background: url('../img/contactSections/contactBoard/longSpace.png') no-repeat center center fixed;
-
   }
 }
 
@@ -647,6 +670,7 @@ table.contactTable2 tr td{
 #contactRow1L{
   position: relative;
   top: -40px;
+  left: -30px;
 }
 #contactRow1R{
   position: relative;
@@ -710,6 +734,8 @@ table.contactTable1 tr td, table.contactTable2 tr td{
 }
 table tr.contactTableImg1 td, table tr.contactTableImg2 td{
   border-radius: 75px;
+  -moz-border-radius:75px;  /* for Firefox */
+  -webkit-border-radius:75px; /* for Webkit-Browsers */
 }
 
 p.contactShoutout{
