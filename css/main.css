@@ -10,7 +10,6 @@ html {
   font-family: HKGrotesk;
 /* background image settings */
   background: url('../img/background.png') no-repeat center center fixed;
-  background:
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
