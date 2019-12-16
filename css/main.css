@@ -4,6 +4,7 @@
 
 html {
   width: 100%;
+  min-width: 400px;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
@@ -34,8 +35,9 @@ div.foregroundTop {
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 85%;
+  width: 70%;
   max-width: 1200px;
+  min-width: 400px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -49,8 +51,9 @@ div.foregroundMid {
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 85%;
+  width: 70%;
   max-width: 1200px;
+  min-width: 400px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -162,7 +165,7 @@ img.sectImgs{
   width: auto;
   max-width: 1200px;
   height: auto;
-  padding: 0px 9% 0px 9%;
+  padding: 0px 11% 0px 11%;
   margin-top: 2.5rem;
 }
 #menubar {
@@ -302,6 +305,7 @@ img.homeWorkImgs{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width:80%;
   max-width: 500px;
   margin-top: 5px;
   border-radius: 50px;
@@ -315,6 +319,7 @@ img.homeWorkShadow{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width:80%;
   max-width: 450px;
   margin-top: 5px;
   opacity: 0.5;
@@ -848,9 +853,6 @@ ul.footBottom{
    ========================================================================== */
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
  * Vendor-prefixed and regular ::selection selectors cannot be combined:
  * https://stackoverflow.com/a/16982510/7133471
  *
@@ -932,18 +934,6 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -962,7 +952,6 @@ textarea {
  *
  * 1. For long content, line feeds are not interpreted as spaces and small width
  *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
 .visuallyhidden {
