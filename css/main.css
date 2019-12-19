@@ -35,7 +35,7 @@ div.foregroundTop {
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 70%;
+  width: 60%;
   max-width: 1200px;
   min-width: 400px;
   height: 100%;
@@ -51,7 +51,7 @@ div.foregroundMid {
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 70%;
+  width: 60%;
   max-width: 1200px;
   min-width: 400px;
   height: 100%;
@@ -144,7 +144,7 @@ img.sectImgs{
   border-radius: 50%;
   -moz-border-radius:50%;  /* for Firefox */
   -webkit-border-radius:50%; /* for Webkit-Browsers */
-  border: 8px solid whitesmoke;
+  border: 6px solid darkblue;
   border-left-color: darkblue;
   border-right-color: darkblue;
 }
@@ -233,6 +233,7 @@ p.homeOpener{
   font-size: 16px;
   line-height: 200%;
   text-align: center;
+  margin-bottom: 40px;
    }
 @media (min-width: 900px) {
   p.homeOpener{
@@ -243,6 +244,7 @@ p.homeOpener{
 #homeSkills{
   text-align: center;
   margin:0px;
+  margin-bottom: 10px;
 }
 ul.homeSkills{
   list-style-type: none;
@@ -268,7 +270,7 @@ margin: 0px 20px 0px 20px;
   border: 4px double darkblue;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1250px) {
   ul.homeSkills li img{
   width: 65px;
   }
@@ -319,6 +321,7 @@ img.homeWorkShadow{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
   width:80%;
   max-width: 450px;
   margin-top: 5px;
@@ -374,6 +377,7 @@ p.aboutOpener{
   font-size: 16px;
   line-height: 200%;
   text-align: justify;
+  margin-bottom: 40px;
 }
 @media (min-width: 700px) {
    p.aboutOpener{
@@ -394,6 +398,7 @@ p.aboutOpener{
 /* Education Section */
 div.eduSchools {
   display: block;
+  margin-bottom: 40px;
 }
 .eduSchools div{
   background: linear-gradient(to top, rgba(0,0,0,.05), rgba(0,0,0,0));
@@ -462,19 +467,19 @@ img.eduShadow{
 /* Skills Section */
 
 table.skillsTable1, table.skillsTable2{
-  padding: 0px 10px 10px 10px;
+  padding: 0px 0px 20px 20px;
   min-width: 300px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 table.skillsTable1 tr td{
-  display: block;
   float: right;
   padding: 10px;
+  margin-bottom: 20px;
 }
 table.skillsTable2 tr td{
-  display: block;
   float: left;
   padding: 10px;
+  margin-bottom: 20px;
 }
 img.skillImg{
 max-width: 40px;
@@ -504,74 +509,75 @@ table tr td.tableImg2 {
   border-bottom-left-radius: 25px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 1100px) {
   table.skillsTable1, table.skillsTable2{
-    padding: 0px 10px 10px 10px;
     min-width: 250px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
-  h5 b{
-    font-size:18px;
+  table.skillsTable1{
+    padding: 0px 15% 10px 0px;
+  }
+  table.skillsTable2{
+    padding: 0px 0px 10px 15%;
   }
   img.skillImg{
-  width: 30px;
+  width: 40px;
   }
   td.skillName{
-  height: 30px;
-  font-size: 12px;
+  height: 40px;
   }
   /* About Skills Table borders */
-  table.skillsTable1 tr td{
+  table.skillsTable1 tr{
     border-bottom: 5px double darkblue;
     border-right: 2px inset darkblue;
   }
-  table.skillsTable2 tr td{
+  table.skillsTable2 tr{
     border-bottom: 5px double darkblue;
     border-left: 2px outset darkblue;
   }
 }
-@media (min-width: 1000px) {
+
+@media (min-width: 1300px) {
   #aboutSkillsRow1L{
     position: relative;
-    right: 100px;
+    right: 20%;
   }
   #aboutSkillsRow1R{
     position: relative;
-    left: 100px;
+    left: 20%;
   }
   #aboutSkillsRow2L{
     position: relative;
-    right: 80px;
+    right: 15%;
   }
   #aboutSkillsRow2R{
     position: relative;
-    left: 80px;
+    left: 15%;
   }
   #aboutSkillsRow3L{
     position: relative;
-    right: 60px;
+    right: 10%;
   }
   #aboutSkillsRow3R{
     position: relative;
-    left: 60px;
+    left: 10%;
   }
     #aboutSkillsRow4L{
       position: relative;
-      right: 40px;
+      right: 5%;
     }
     #aboutSkillsRow4R{
       position: relative;
-      left: 40px;
+      left: 5%;
   }
-  table.skillsTable1 tr td{
+
+  table.skillsTable1 tr{
     border-bottom: 5px double darkblue;
     border-right: 2px inset darkblue;
-
   }
-  table.skillsTable2 tr td{
+  table.skillsTable2 tr{
     border-bottom: 5px double darkblue;
     border-left: 2px outset darkblue;
-
   }
 }
 
@@ -621,6 +627,7 @@ p.contactOpener{
 p.contactDisclaimer{
   font-size: 12px;
   text-align: center;
+  margin-bottom: 40px;
 }
 table.contactTable1, table.contactTable2{
   padding: 35px 0px 10px 0px;
@@ -731,7 +738,7 @@ table.contactTable2 tr td{
     right: -50px;
   }
 }
-/* About Skills Table borders */
+/* About contact Table borders */
 table.contactTable1 tr td, table.contactTable2 tr td{
   border: 2px groove white;
 }
