@@ -4,18 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
-  <meta name="description" content="">
+  <title>Erik S Yan</title>
+  <meta name="description" content="Erik S Yan personal website">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" src="img/favicon.png" type="image/x-icon">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/hover.css">
+
 
   <!-- JS -->
   <script src="js/aos.js"></script>
@@ -30,10 +32,14 @@
   <!-- ============ Menu Bar ============== -->
   <div class="sticky" id="menuContainer">
     <ul id="menubar">
-      <li id="home" class="active"><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li id="home" class="hvr-grow">
+        <a href="index.html" >
+          <img class="logo" src="img/menuBar/logo.png"></img>
+        </a>
+      </li>
+      <li class="hvr-grow"><a href="about.html">About</a></li>
       <li><a id="work">Work</a></li>
-      <li id="contact"><a href="contact.html">Contact</a></li>
+      <li class="hvr-grow" id="contact"><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 
@@ -60,7 +66,7 @@
         <div>
           <h2>About Me</h2>
           <p class="homeOpener">Utilizing developer tools to improve healthcare.</p>
-          <a href="about.html"><img class="sectImgs" alt="asian man" src="img/homeSections/skillsSection/asian.png" data-aos="fade-in" data-aos-duration="500" data-aos-offset="100"/></a>
+          <a href="about.html"><img class="sectImgs hvr-wobble-top" alt="asian man" src="img/homeSections/skillsSection/asian.png" data-aos="fade-in" data-aos-duration="500" data-aos-offset="100"/></a>
         </div>
       </div>
     </div>
@@ -132,7 +138,7 @@
             <p class="homeOpener">Let's get some coffee and chat.</p>
           </div>
           <div data-aos="fade-in" data-aos-duration="500">
-            <a href="contact.html"><img class="sectImgs" src="img/homeSections/contactSection/coffee.png"/></a>
+            <a href="contact.html"><img class="sectImgs hvr-wobble-top" src="img/homeSections/contactSection/coffee.png"/></a>
           </div>
         </div>
       </div>
@@ -145,11 +151,11 @@
   <div class="row">
     <div class="twleve columns" id="footSocial">
       <ul class="footSocial">
-        <li>
+        <li class="hvr-skew-backward">
           <a href="https://github.com/eyan02" style="text-decoration:none"><img src="img/footer/github.png"/></a>
         </li>
-        <li>
-          <a href="https://www.linkedin.com/in/erick-yan-5568339b/" style="text-decoration:none"><img src="img/footer/linkedin.png"/></a>
+        <li class="hvr-skew-forward">
+          <a href="https://www.linkedin.com/in/erik-yan-5568339b/" style="text-decoration:none"><img src="img/footer/linkedin.png"/></a>
         </li>
       </ul>
     </div>
