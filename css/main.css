@@ -16,6 +16,9 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+@media (max-width){
+
+}
 @font-face{
   font-family: HKGrotesk;
   src: url('../fonts/HKGrotesk-Regular.otf');
@@ -34,7 +37,7 @@ div.foregroundTop, div.foregroundMid {
   border-radius: 15px;
   width: 60%;
   max-width: 1200px;
-  min-width: 340px;
+  min-width: 300px;
   height: 100%;
   margin: auto;
   background: rgba(255, 255, 255, 0.70);
@@ -139,6 +142,7 @@ img.sectImgs{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  z-index: 999;
   width: 84%;
   max-width: 1200px;
   height: auto;
@@ -187,14 +191,27 @@ li a:hover {
 .active {
     text-decoration: underline;
 }
-@media (max-width: 360px) {
+@media (max-width: 369px) {
+  #menuContainer{
+    padding: 0px 1% 0px 1%;
+    width: 98%;
+  }
 li a {
-  font-size: 10px;
+  font-size: 13px;
 }
 }
 @media (min-width: 370px) {
+  #menuContainer{
+    padding: 0px 4% 0px 4%;
+    width: 92%;
+  }
 li a {
-  font-size: 14px;
+  font-size: 15px;
+}
+}
+@media (min-width: 400px) {
+li a {
+  font-size: 16px;
 }
 }
 @media (min-width: 700px) {
@@ -206,7 +223,6 @@ li a {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
 }
 
 /* ==========================================================================
@@ -245,6 +261,12 @@ margin: 0px 20px 0px 20px;
 }
 
 @media (max-width: 750px) {
+  ul.homeSkills{
+    margin-bottom: 10px;
+  }
+  #homeSkills{
+    margin-bottom:
+  }
   ul.homeSkills li img{
   width: 40px;
   }
@@ -453,6 +475,7 @@ table.skillsTable1, table.skillsTable2{
   padding: 0px 0px 20px 20px;
   min-width: 300px;
   margin-bottom: 20px;
+  overflow:hidden;
 }
 table.skillsTable1 tr td{
   float: right;
@@ -561,6 +584,15 @@ table tr td.tableImg2 {
   table.skillsTable2 tr{
     border-bottom: 5px double darkblue;
     border-left: 2px outset darkblue;
+  }
+}
+
+@media (max-width: 420px){
+  table.skillsTable1{
+    padding: 0px 8% 10px 0px;
+  }
+  table.skillsTable2{
+    padding: 0px 0px 10px 8%;
   }
 }
 
