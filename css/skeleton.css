@@ -48,16 +48,15 @@
     padding: 0; }
 }
 
-/* For devices larger than 550px */
-@media (min-width: 1100px) {
-  .container {
-    width: 80%; }
-  .column,
-  .columns {
-    margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child {
-    margin-left: 0; }
+@media (min-width:700px){
+  #schoolOne-halfColumn{ width: 48%; }
+  .column, .columns{ margin-left: 1.5%; }
+}
+
+@media (min-width: 1000px) {
+  .container { width: 80%; }
+  .column, .columns { margin-left: 4%; }
+  .column:first-child, .columns:first-child { margin-left: 0; }
 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }

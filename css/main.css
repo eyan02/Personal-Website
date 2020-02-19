@@ -14,7 +14,7 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: auto;
 }
 @media (max-width){
 
@@ -43,6 +43,16 @@ div.foregroundTop, div.foregroundMid {
   background: rgba(255, 255, 255, 0.70);
   margin-bottom: 90px;
 }
+
+@media (min-width:370px){
+  div.foregroundTop, div.foregroundMid { width:90%; }
+}
+@media (min-width:700px){
+  div.foregroundTop, div.foregroundMid { width:75%; }
+}
+@media (min-width:1000px){
+  div.foregroundTop, div.foregroundMid { width:60%; }
+}
 div.foregroundTop{
   margin-top:150px;
 }
@@ -53,6 +63,7 @@ section.secSpacer{
 /* Page text settings */
 h1,h2{
   padding: 50px 0px 0px 0px;
+  color: rgb(21, 82, 124);
 }
 h1,h2,h3,h4,h5,h6{
   text-align: center;
@@ -68,18 +79,7 @@ td{
   font-family: HKGrotesk;
 }
 
- h1::before, h1::after {
-   content: "";
-   display: inline-block;
-   height: 15px;
-   position: relative;
-   vertical-align: middle;
-   border-top: 4px ridge darkblue;
-   border-radius: 25px;
-   -moz-border-radius:25px;  /* for Firefox */
-   -webkit-border-radius:25px; /* for Webkit-Browsers */
-   width: 50%;
-}
+
 h1::before {
  right: 0.5em;
  margin-left: -50%;
@@ -89,18 +89,7 @@ h1::after {
  margin-right: -50%;
 }
 
-h2::before, h2::after {
-content: "";
-display: inline-block;
-height: 15px;
-position: relative;
-vertical-align: middle;
-border-top: 4px ridge darkblue;
-border-radius: 25px;
--moz-border-radius:25px;  /* for Firefox */
--webkit-border-radius:25px; /* for Webkit-Browsers */
-width: 50%;
-}
+
 h2::before {
  right: 0.5em;
  margin-left: -50%;
@@ -124,9 +113,9 @@ img.sectImgs{
   border-radius: 50%;
   -moz-border-radius:50%;  /* for Firefox */
   -webkit-border-radius:50%; /* for Webkit-Browsers */
-  border: 6px solid darkblue;
-  border-left-color: darkblue;
-  border-right-color: darkblue;
+  border: 6px solid rgb(21, 82, 124, 0.9);
+  border-left-color: rgb(21, 82, 124, 0.9);
+  border-right-color: rgb(21, 82, 124, 0.9);
 }
 
 
@@ -144,10 +133,9 @@ img.sectImgs{
   margin-right: auto;
   z-index: 999;
   width: 84%;
-  max-width: 1200px;
   height: auto;
   padding: 0px 8% 0px 8%;
-  background-color: rgb(0, 0, 0,0.3);
+  background-color: rgb(0, 0, 0,0.5);
 }
 #menubar {
   border-bottom-left-radius: 25px;
@@ -158,6 +146,15 @@ img.sectImgs{
   margin: auto;
   overflow: hidden;
   /* background-color: #333; */
+}
+.logo{
+  height: 100%;
+  width: auto;
+  position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: url('../img/menuBar/logo.png')
 }
 li {
     float:left;
@@ -174,10 +171,11 @@ li a {
     text-align: center;
     padding: 14px 16px 5px 16px;
     text-decoration: none;
-    font-family: HKGrotesk;
+    font-family: DancingScript;
 }
 #home{
   padding-left: 10px;
+  margin-top: 5px;
 }
 #work{
   color: grey;
@@ -193,31 +191,28 @@ li a:hover {
 }
 @media (max-width: 369px) {
   #menuContainer{
+    padding: 0px;
+    width: 100%;
+  }
+  li a { font-size: 18px; }
+  .logo{ max-height: 18px; }
+}
+@media (min-width: 370px) {
+  #menuContainer{
     padding: 0px 1% 0px 1%;
     width: 98%;
   }
-li a {
-  font-size: 13px;
+  li a { font-size: 22px; }
+  .logo{ max-height: 22px; }
 }
-}
-@media (min-width: 370px) {
+@media (min-width: 700px) {
   #menuContainer{
     padding: 0px 4% 0px 4%;
     width: 92%;
   }
-li a {
-  font-size: 15px;
-}
-}
-@media (min-width: 400px) {
-li a {
-  font-size: 16px;
-}
-}
-@media (min-width: 700px) {
-li a {
-  font-size: 18px;
-}
+  li a { font-size: 27px; }
+  .logo{ max-height: 26px; }
+  #home{ margin-top: 8px; }
 }
 
 .sticky {
@@ -253,7 +248,7 @@ ul.homeSkills{
 ul.homeSkills li img{
 width: 50px;
 padding: 2px;
-border: 2px double darkblue;
+border: 2px double rgb(21, 82, 124);
 border-radius: 50px;
 -moz-border-radius:50px;  /* for Firefox */
 -webkit-border-radius:50px; /* for Webkit-Browsers */
@@ -272,7 +267,7 @@ margin: 0px 20px 0px 20px;
   }
   ul.homeSkills li img{
   width: 40px;
-  border: 4px double darkblue;
+  border: 4px double rgb(21, 82, 124);
   }
 }
 @media (min-width: 1250px) {
@@ -281,7 +276,7 @@ margin: 0px 20px 0px 20px;
   }
   ul.homeSkills li img{
   width: 60px;
-  border: 8px double darkblue;
+  border: 8px double rgb(21, 82, 124);
   }
 }
 
@@ -405,14 +400,12 @@ div.eduSchools {
   display: block;
   margin-bottom: 40px;
 }
-.eduSchools div{
-  background: linear-gradient(to top, rgba(0,0,0,.05), rgba(0,0,0,0));
-  border-radius: 10px 10px 15px 15px;
-  -moz-border-radius:10px 10px 15px 15px;  /* for Firefox */
-  -webkit-border-radius:10px 10px 15px 15px; /* for Webkit-Browsers */
-  }
 #eduImgCap{
     padding-bottom: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,.05), rgba(0,0,0,0));
+    border-radius: 10px 10px 15px 15px;
+    -moz-border-radius:10px 10px 15px 15px;  /* for Firefox */
+    -webkit-border-radius:10px 10px 15px 15px; /* for Webkit-Browsers */
   }
 p.eduImgCap {
   text-align: center;
@@ -458,10 +451,9 @@ img.eduShadow{
   p.eduImgCap {
     font-size: 14px;
   }
-  p.eduImgCap b{
-    font-size: 16px;
-  }
+  p.eduImgCap b{ font-size: 16px; }
 }
+
 @keyframes crestMoveUpDown {0%, 100% {bottom: 0;} 50% {bottom: 5px;}}
 /* Safari*/
 @-webkit-keyframes MoveUpDown {0%, 100% {bottom: 0;} 50% {bottom: 5px;}}
@@ -481,11 +473,23 @@ table.skillsTable1 tr td{
   float: right;
   padding: 10px;
   margin-bottom: 20px;
+  overflow: hidden;
+
+  /* About Skills Table borders */
+  border-bottom: 8px double rgb(21, 82, 124);
+  border-right: 3px inset rgb(21, 82, 124);
+  border-top-right-radius: 10px;
 }
 table.skillsTable2 tr td{
   float: left;
   padding: 10px;
   margin-bottom: 20px;
+  overflow: hidden;
+
+  /* About Skills Table borders */
+  border-bottom: 8px double rgb(21, 82, 124);
+  border-left: 3px outset rgb(21, 82, 124);
+  border-top-left-radius: 10px;
 }
 img.skillImg{
 max-width: 40px;
@@ -496,21 +500,10 @@ td.tableImg1, td.tableImg2{
 td.skillName{
 height: 40px;
 }
-
-/* About Skills Table borders */
-table.skillsTable1 tr td{
-  border-bottom: 8px double darkblue;
-  border-right: 3px inset darkblue;
-  border-top-right-radius: 10px;
-}
 table tr td.tableImg1 {
   border-bottom-right-radius: 25px;
 }
-table.skillsTable2 tr td{
-  border-bottom: 8px double darkblue;
-  border-left: 3px outset darkblue;
-  border-top-left-radius: 10px;
-}
+
 table tr td.tableImg2 {
   border-bottom-left-radius: 25px;
 }
@@ -534,12 +527,12 @@ table tr td.tableImg2 {
   }
   /* About Skills Table borders */
   table.skillsTable1 tr{
-    border-bottom: 5px double darkblue;
-    border-right: 2px inset darkblue;
+    border-bottom: 5px double rgb(21, 82, 124);
+    border-right: 2px inset rgb(21, 82, 124);
   }
   table.skillsTable2 tr{
-    border-bottom: 5px double darkblue;
-    border-left: 2px outset darkblue;
+    border-bottom: 5px double rgb(21, 82, 124);
+    border-left: 2px outset rgb(21, 82, 124);
   }
 }
 
@@ -578,12 +571,12 @@ table tr td.tableImg2 {
   }
 
   table.skillsTable1 tr{
-    border-bottom: 5px double darkblue;
-    border-right: 2px inset darkblue;
+    border-bottom: 5px double rgb(21, 82, 124);
+    border-right: 2px inset rgb(21, 82, 124);
   }
   table.skillsTable2 tr{
-    border-bottom: 5px double darkblue;
-    border-left: 2px outset darkblue;
+    border-bottom: 5px double rgb(21, 82, 124);
+    border-left: 2px outset rgb(21, 82, 124);
   }
 }
 
@@ -660,21 +653,11 @@ table.contactTable2 tr td{
   padding: 0px;
 }
 
-#contactRow1L img{
-  width: 100px;
-}
-#contactRow2L img{
-  width: 80px;
-}
-#contactRow3L img, #contactRow3R img{
-  width: 30px;
-}
-#contactRow1R img{
-  width: 60px;
-}
-#contactRow2R img{
-  width: 50px;
-}
+#contactRow1L img{  width: 100px; }
+#contactRow2L img{  width: 80px; }
+#contactRow3L img, #contactRow3R img{  width: 30px; }
+#contactRow1R img{  width: 60px; }
+#contactRow2R img{  width: 50px; }
 @media (max-width: 770px) {
   #contactRow1L img{
     width: 80px;
@@ -855,7 +838,7 @@ ul.footBottom{
   list-style-type: none;
   display: inline-block;
   height: 40px;
-  margin-bottom: 0px;
+  margin: 20px 3px 2px 3px;
 }
 #crLeft {
   float: right;
