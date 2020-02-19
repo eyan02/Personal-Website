@@ -10,11 +10,11 @@ html {
   line-height: 1.4;
   font-family: HKGrotesk;
 /* background image settings */
-  background: url('../img/background.png') no-repeat center center fixed;
+  background: url('../img/background.png') center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: auto;
+  background-size: 150%;
 }
 @media (max-width){
 
