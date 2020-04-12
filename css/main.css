@@ -293,11 +293,11 @@ p.homeWorkImgCap {
 p.homeWorkImgCap b{
   font-size: 16px;
 }
-p.comingSoon{
+p.clickWork{
   position: relative;
   margin:0;
-  font-size: 45px;
-  color: grey;
+  font-size: 30px;
+  color: rgb(79, 92, 106);
   text-align: center;
   top:100px;
   z-index: 1;
@@ -334,7 +334,7 @@ img.homeWorkShadow{
   img.homeWorkShadow{
     max-width: 400px;
 }
-p.comingSoon{
+p.clickWork{
   font-size: 35px;
   top:80px;
 }
@@ -346,7 +346,7 @@ p.comingSoon{
   img.homeWorkShadow{
     max-width: 200px;
 }
-p.comingSoon{
+p.clickWork{
   font-size: 20px;
   top:50px;
 }
@@ -586,6 +586,113 @@ table tr td.tableImg2 {
   }
   table.skillsTable2{
     padding: 0px 0px 10px 8%;
+  }
+}
+
+/* ======================================================================== */
+
+
+
+/* ==========================================================================
+   C O N T A I N   I T     P A G E
+   ========================================================================== */
+
+
+img.containItLogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  max-width: 220px;
+  opacity: .8;
+  padding:4px;
+}
+
+img.simImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+  max-width: 400px;
+  margin-top: 5px;
+  border-radius: 25px;
+  -moz-border-radius:25px;  /* for Firefox */
+  -webkit-border-radius:25px; /* for Webkit-Browsers */
+  border-bottom: 1px outset lightgrey;
+  border-left: 1px inset whitesmoke;
+  opacity: 0.8;
+}
+img.simShadow{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width:80%;
+  max-width: 430px;
+  margin-top: 5px;
+  opacity: 0.5;
+}
+img.distImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+  max-width: 600px;
+  margin-top: 5px;
+  border-radius: 25px;
+  -moz-border-radius:25px;  /* for Firefox */
+  -webkit-border-radius:25px; /* for Webkit-Browsers */
+  border-bottom: 1px outset lightgrey;
+  border-left: 1px inset whitesmoke;
+  opacity: 0.8;
+}
+img.distShadow{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width:80%;
+  max-width: 640px;
+  margin-top: 5px;
+  opacity: 0.5;
+}
+img.demoImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+  max-width: 350px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 740px) {
+  img.simImg{
+    max-width: 410px;
+  }
+  img.simShadow{
+    max-width: 400px;
+  }
+  img.distImg{
+    max-width: 410px;
+  }
+  img.distShadow{
+    max-width: 400px;
+  }
+}
+@media (max-width: 420px) {
+  img.simImg{
+    max-width: 250px;
+  }
+  img.simShadow{
+    max-width: 200px;
+  }
+  img.distImg{
+    max-width: 410px;
+  }
+  img.distShadow{
+    max-width: 400px;
   }
 }
 
