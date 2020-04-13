@@ -52,8 +52,8 @@
             <h1 data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">Contact Tracing Algorithms</h1>
             <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
               On this page I'll talk in-depth about the contact-tracing algorithms developed. User location data is analyzed
-              to extract contact events between two users. The data is then cleaned, organized, and processed to output
-              actionable insight for users and public health divisions.
+              to identify contact events between two users. The data is then cleaned, organized, and processed to output
+              actionable insight for both users and public health divisions.
             </br/>
               <p class="simInfo" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
               For access to the algorithm github respository, please <a href="mailto:inquiries.erikyan@gmail.com">contact me</a>
@@ -80,8 +80,8 @@
               for each coordinate.
             </p>
             <p class="simInfo" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
-              Example: The simulation shows two people entering the same aisle in a supermarket.
-              Person B (blue) tries to practice social distancing, but ends up near Person A (red) for a brief period of time.
+              Example: The simulation shows two people entering the same aisle in a supermarket. Person B (blue) tries to
+              practice social distancing, but ends up near Person A (red) for a brief period of time.
             </p>
           </div>
         </div>
@@ -112,18 +112,18 @@
               dictionary of unique GPS coordinates.
               <img class="compressionImg" alt="compression flow" src="img/contactTraceAlgoSections/compression.png"/>
               The infected user’s dictionary is then compared to other user data for contact interaction events. We can then
-              chunk sections of geographical areas into nested categories (such as GPS coordinates grouped by zip code and
-              sub-sectioned to 500 squared meter blocks). This simplifies user GPS coordinates to plain numbers, which we can
+              chunk sections of geographical areas into nested categories (such as GPS coordinates grouped by zip code, which are
+              sub-sectioned into 500 squared meter blocks). This simplifies user GPS coordinates to plain numbers, which we can
               use to quickly compare if two users were in the same general area.
               </br/>
               </br/>
-              To get a better sense of how compression and chunking is effective for this data, lets calculate an estimated
-              reduction in data pre- and post- compression. If we estimate people spend between <b>~41% to ~65%</b> (or more)
+              To get a better sense of how compression and chunking is effective for this type of data, lets calculate an estimated
+              reduction in data pre- versus post- compression. If we estimate people spend between <b>~41% to ~65%</b> (or more)
               of their day doing repetitive tasks, we can theoretically reduce our dataset by <b>~38% to ~60% (30,587 to 48,430
-              datapoints)</b>! Chunking can be used to simplify our comparison of two user’s locations to larger sections of
-              geographical areas like comparing zip codes). If the data set is especially large, we can create further compressed
-              dictionaries using the chunk identifiers (but at a loss of time-stamp details). For details about my calculations
-              please read below:
+              datapoints)</b>! Chunking can be used to further simplify our comparison of two user’s locations to larger sections
+              of geographical areas (like 500 squared meter blocks). If the data set is especially large, we can further compress
+              our dictionaries using chunk identifiers like zip code (but at a significant loss of time-stamp details).
+              For details about my calculations please read below:
             </p>
             <p class="calcInfo" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
               If we ping a user’s location every 15 seconds and examine 14 days’ worth of data (two-week incubation period) we
@@ -151,10 +151,10 @@
         <div>
           <h2 data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">Measuring Geographical Distance</h2>
           <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
-            A primary focus of the analysis is the distance between the two people. For the simulation, I used
-            Pythagorean theorem. GPS location data is not as simple to process. Latitude and longitude require the
-            haversine formula to calculate the orthodromic distance between two points (shortest distance along the
-            surface of the earth).
+            A primary component of this analysis is the distance between the two people. For the simulation, I used
+            Pythagorean theorem to analyze the distance between two users at a given point in time. GPS location data is
+            not as simple to process. Latitude and longitude require the haversine formula to calculate the orthodromic
+            distance between two points (or shortest distance along the surface of the earth).
           </br/>
           Such that:
           </p>
@@ -207,12 +207,13 @@
           <div>
             <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
               Next we clean and organize the data for our analysis. After calculating the distance between points,
-              the data is then scanned using a Boolean expression to locate interactions between the users. If a user
-              is within a specified number of feet (6 feet for the simulation, as per the CDC guidelines) the interaction
+              the data is then sorted using a Boolean expression to locate interactions between the users. If a user
+              is within a specified number of feet (6 feet for the simulation, as per CDC's guidelines) the interaction
               is flagged. Next, we count the number of consecutive data points where an interaction occurred. This allows
-              us to quantify the duration of the interaction and exclude all brief contact events (such as walking past
-              someone). We then apply a minimum consecutive value requirement that filters the events for only events that
-              contain <i>X</i> number of datapoints (or more) such that <i>X</i> can be determined by the data analyst.
+              us to quantify the duration of each interaction and exclude any unimportant contact events (such as walking
+              past someone). We then apply a minimum consecutive-value requirement that filters the identified contact
+              events for only events that contain <i>X</i> number of datapoints (or more) such that <i>X</i> can be
+              modified at the discretion of the analyst.
           </div>
         </div>
       </div>
@@ -231,10 +232,10 @@
         <div>
           <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
             The user dashboard populates with a number of metrics a user may find useful. Including average distance
-            from other users, shortest distance at any given time, and a social distance grade. User metrics can be
-            compared to averages according to age, sex, and other demographic characteristics. Demographic information
-            in tandem with contact events provide risk of infection probability estimates that are more accurate than
-            demographic information alone.
+            from other users, shortest distance at any given time, and a social distance grade. User metrics can also be
+            compared to the averages other users with similar age, sex, and other demographic characteristics.
+            Demographic information in tandem with contact events provide risk of infection probability estimates
+            that are more accurate than demographic information alone.
           </p>
         </div>
       </div>
@@ -253,10 +254,10 @@
             <img class="gradeEquImg" alt="simulation" src="img/contactTraceAlgoSections/grade_equation.svg"/>
           </div>
           <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-offset="-50">
-            Social distance grade for each user is calculated using average skewedness across the user's contact events.
+            The social distance grade for each user is calculated using average skewedness across the user's contact events.
             For each contact event, a distribution of contact is created. The distribution is then analyzed for directional
-            skew and categorized based on WHO and CDC social distancing guidelines from A, B, C, D, to F depending on the
-            skew of the distribution from > 1 to < -1 respectively.
+            skew and categorically graded based on WHO and CDC social distancing guidelines from A, B, C, D, to F depending
+            on the skew of the distribution from > 1 to < -1 respectively.
           </p>
         </div>
       </div>
