@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#231F20;}
+	.st1{fill:#6DBE45;}
+</style>
+<path class="st0" d="M272,64c17.7,0,32,14.3,32,32v64c0-17.7-14.3-32-32-32H64H48c-17.7,0-32-14.3-32-32c0-8.8,3.6-16.8,9.4-22.6
+	C31.2,67.6,39.2,64,48,64H272z"/>
+<path class="st0" d="M64,128v304H48c-17.7,0-32-14.3-32-32V96c0,17.7,14.3,32,32,32H64z"/>
+<path class="st0" d="M304,256v144c0,17.7-14.3,32-32,32H64V128h208c17.7,0,32,14.3,32,32v16V256z"/>
+<g>
+	<path class="st1" d="M496,416v80h-64v-40v-40H496z"/>
+	<path class="st1" d="M496,288v80h-64v-40v-40H496z"/>
+	<path class="st1" d="M496,144v80h-64v-48v-32H496z"/>
+	<path class="st1" d="M496,16v80h-64V56V16H496z"/>
+</g>
+<path class="st0" d="M112,304h144v32H112V304z"/>
+<path class="st0" d="M112,224h144v32H112V224z"/>
+<path class="st1" d="M272,336v48H96v-48h16h144H272z"/>
+<path class="st1" d="M272,256v48h-16H112H96v-48h16h144H272z"/>
+<path class="st1" d="M272,176v48h-16H112H96v-48H272z"/>
+<path d="M40,88h16v16H40V88z"/>
+<path d="M72,88h208v16H72V88z"/>
+<path d="M88,232h16v16H88v64h16v16H88v64h192v-64h-16v-16h16v-64h-16v-16h16v-64H88V232z M264,376H104v-32h160V376z M248,328H120
+	v-16h128V328z M264,296H104v-32h160V296z M248,248H120v-16h128V248z M104,184h160v32H104V184z"/>
+<path d="M504,104V8h-80v40h-24c-22.1,0-40,17.9-40,40v160h-48V96c0-22.1-17.9-40-40-40H48C25.9,56,8,73.9,8,96v304
+	c0,22.1,17.9,40,40,40h224c22.1,0,40-17.9,40-40V264h48v160c0,22.1,17.9,40,40,40h24v40h80v-96h-80v40h-24c-13.2,0-24-10.8-24-24
+	v-88h48v40h80v-96h-80v40h-48V184h48v48h80v-96h-80v32h-48V88c0-13.2,10.8-24,24-24h24v40H504z M24,400V128c6.7,5,15,8,24,8h8v288
+	h-8C34.8,424,24,413.2,24,400z M296,400c0,13.2-10.8,24-24,24H72V136h200c13.2,0,24,10.8,24,24V400z M296,128c-6.7-5-15-8-24-8H48
+	c-13.2,0-24-10.8-24-24s10.8-24,24-24h224c13.2,0,24,10.8,24,24V128z M440,424h48v64h-48V424z M440,296h48v64h-48V296z M440,152h48
+	v64h-48V152z M440,24h48v64h-48V24z"/>
+<rect x="324" y="242.7" transform="matrix(0.7071 0.7071 -0.7071 0.7071 279.8119 -163.5256)" width="26.6" height="26.6"/>
+</svg>
