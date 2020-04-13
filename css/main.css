@@ -709,6 +709,129 @@ img.demoImg{
 
 
 
+
+/* ==========================================================================
+   A L G O R I T H M N     P A G E
+   ========================================================================== */
+  img.dEquImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    max-height: 20px;
+    margin-bottom: 10px;
+  }
+  img.cEquImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    max-height: 30px;
+    margin-bottom: 10px;
+  }
+  img.aEquImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    max-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  img.gradeEquImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    max-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  img.hotspotImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    max-width: 600px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    -moz-border-radius:25px;  /* for Firefox */
+    -webkit-border-radius:25px; /* for Webkit-Browsers */
+    border-bottom: 1px outset lightgrey;
+    border-left: 1px inset whitesmoke;
+    opacity: 0.8;
+  }
+  @media (max-width: 740px) {
+    img.dEquImg{
+      max-height: 14px;
+    }
+    img.cEquImg{
+      max-height: 23px;
+    }
+    img.aEquImg{
+      max-height: 24px;
+    }
+    img.gradeEquImg{
+      max-height: 24px;
+    }
+  }
+  @media (max-width: 420px) {
+    img.dEquImg{
+      max-height: 11px;
+    }
+    img.cEquImg{
+      max-height: 18px;
+    }
+    img.aEquImg{
+      max-height: 18px;
+    }
+    img.gradeEquImg{
+      max-height: 24px;
+    }
+  }
+
+  p.equText{
+    font-size: 16px;
+    line-height: 200%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(79, 92, 106);
+  }
+  @media (min-width: 900px) {
+    p.equText{
+      font-size: 16px;
+    }
+  }
+  p.haversineInfo{
+    font-size: 13px;
+    line-height: 200%;
+    text-align: center;
+    margin-bottom: 40px;
+    color: grey;
+     }
+  @media (min-width: 900px) {
+    p.haversineInfo{
+      font-size: 17px;
+    }
+  }
+
+  img.dataCleanIcon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    max-width: 120px;
+    opacity: .8;
+    padding:4px;
+  }
+/* ======================================================================== */
+
+
+
+
+
 /* ==========================================================================
    C O N T A C T     P A G E
    ========================================================================== */

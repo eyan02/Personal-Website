@@ -1,0 +1,325 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Erik S Yan</title>
+  <meta name="description" content="Erik S Yan personal website">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="shortcut icon" src="img/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/hover.css">
+
+
+  <!-- JS -->
+  <script src="js/aos.js"></script>
+
+</head>
+
+<body class="page">
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- ============ Menu Bar ============== -->
+  <div class="sticky" id="menuContainer" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
+    <ul id="menubar">
+      <li class="hvr-grow" id="home">
+        <a href="index.html" >
+          <img class="logo" src="img/menuBar/logo.png"></img>
+        </a>
+      </li>
+      <li class="hvr-grow"><a href="about.html">About</a></li>
+      <li><a class="active hvr-grow" href="contact_tracing.html">Work</a></li>
+      <li class="hvr-grow" id="contact"><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ============ ContainIt Opener ============== -->
+  <div class="foregroundTop">
+    <section class="secSpacer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h1 data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">Contact Tracing Algorithmns</h1>
+            <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
+              On this page I'll talk in-depth about the contact-tracing algorithmns developed. User location data is analyzed
+              to extract contact events between two users. The data is then cleaned, organized, and processed to output
+              actionable insight for users and public health divisions.
+            </br/>
+              <p class="simInfo" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
+              For access to the algorithmn github respository, please <a href="mailto:inquiries.erikyan@gmail.com">contact me</a>
+              for more info.
+              </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ Contact Event Simulation Section ============== -->
+  <div class="foregroundMid">
+    <section class="secSpacer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h2 data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">Contact Event Simulation</h2>
+          </div>
+          <div>
+            <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
+              For the purpose of simulation, x and y coordinate positioning data was used with an associated time stamp
+              for each coordinate.
+            </p>
+            <p class="simInfo" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
+              Example: The simulation shows two people entering the same aisle in a supermarket.
+              Person B (blue) tries to practice social distancing, but ends up near Person A (red) for a brief period of time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve column">
+          <div class="homeWorkSect">
+          <div data-aos="fade-right" data-aos-duration="600" data-aos-offset="200" data-aos-delay="400">
+            <img class="simImg" alt="simulation" src="img/containItSections/contact_visual.gif"/>
+          </div>
+            <img class="simShadow" data-aos="fade-in" data-aos-duration="600" data-aos-offset="0" data-aos-delay="" alt="simulation shadow" src="img/homeSections/workSection/shadow.png"/>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ Filtering Raw Location Data Opener ============== -->
+  <div class="foregroundMid">
+    <section class="secSpacer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h2 data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">Filtering Raw Location Data</h2>
+            <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
+              The primary method for interaction-event scanning is the calculation of latitude and longitude points
+              in a radial area such that the diameter between each two points is less than or equal to 6 feet.
+              This allows us to identify sub-sections of geolocation data that may contain a contact event between two people.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!-- ============ Measuring Geographical Distance Section ============== -->
+<div class="foregroundMid">
+  <section class="secSpacer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2 data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">Measuring Geographical Distance</h2>
+          <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
+            A primary focus of the analysis is the distance between the two people. For the simulation, I used
+            Pythagorean theorem. GPS location data is not as simple to process. Latitude and longitude require the
+            haversine formula to calculate the orthodromic distance between two points (shortest distance along the
+            surface of the earth).
+          </br/>
+          Such that:
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve column">
+        <div class="homeWorkSect">
+        <div data-aos="fade-down" data-aos-duration="600" data-aos-offset="" data-aos-delay="">
+          <img class="dEquImg" alt="simulation" src="img/contactTraceAlgoSections/d_equation.svg"/>
+        </div>
+          <p class="equText" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
+            where
+          </p>
+          <div data-aos="fade-down" data-aos-duration="600" data-aos-offset="" data-aos-delay="100">
+            <img class="cEquImg" alt="simulation" src="img/contactTraceAlgoSections/c_equation.svg"/>
+          </div>
+          <p class="equText" data-aos="fade-in" data-aos-duration="400" data-aos-delay="400">
+            and
+          </p>
+          <div data-aos="fade-down" data-aos-duration="600" data-aos-offset="" data-aos-delay="200">
+            <img class="aEquImg" alt="simulation" src="img/contactTraceAlgoSections/a_equation.svg"/>
+          </div>
+          <p class="equText" data-aos="fade-in" data-aos-duration="400" data-aos-delay="400">
+            such that R is earth’s radius, φ is latitude, and λ is longitude.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <p class="haversineInfo" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300" data-aos-offset="300">
+          For a more detailed description of the haversine formula I highly recommend
+          <a href="https://www.movable-type.co.uk/scripts/latlong.html">this article</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ Infection Section ============== -->
+<div class="foregroundMid">
+  <section class="secSpacer hvr">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2 data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">Cleaning the Data</h2>
+          <img class="dataCleanIcon" alt="cleaning data" src="img/contactTraceAlgoSections/data_cleaning.svg" data-aos="fade-in" data-aos-duration="800"/>
+          <div>
+            <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
+              Next we clean and organize the data for our analysis. After calculating the distance between points,
+              the data is then scanned using a Boolean expression to locate interactions between the users. If a user
+              is within a specified number of feet (6 feet for the simulation, as per the CDC guidelines) the interaction
+              is flagged. Next, we count the number of consecutive data points where an interaction occurred. This allows
+              us to quantify the duration of the interaction and exclude all brief contact events (such as walking past
+              someone). We then apply a minimum consecutive value requirement that filters the events for only events that
+              contain <i>X</i> number of datapoints (or more) such that <i>X</i> can be determined by the data analyst.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ Algorithmn Section ============== -->
+<div class="foregroundMid">
+  <section class="secSpacer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2 data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">User Insight Dashboard</h2>
+        </div>
+        <div>
+          <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
+            The user dashboard populates with a number of metrics a user may find useful. Including average distance
+            from other users, shortest distance at any given time, and a social distance grade. User metrics can be
+            compared to averages according to age, sex, and other demographic characteristics. Demographic information
+            in tandem with contact events provide risk of infection probability estimates that are more accurate than
+            demographic information alone.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve column">
+          <div class="homeWorkSect">
+            <div data-aos="fade-in" data-aos-duration="600" data-aos-offset="" data-aos-delay="">
+              <img class="distImg" alt="simulation" src="img/containItSections/distribution.svg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <div data-aos="fade-in" data-aos-duration="600" data-aos-offset="" data-aos-delay="">
+            <img class="gradeEquImg" alt="simulation" src="img/contactTraceAlgoSections/grade_equation.svg"/>
+          </div>
+          <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="">
+            Social distance grade for each user is calculated using average skewedness across the user's contact events.
+            For each contact event, a distribution of contact is created. The distribution is then analyzed for directional
+            skew and categorized based on WHO and CDC social distancing guidelines from A, B, C, D, to F depending on the
+            skew of the distribution from > 1 to < -1 respectively.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ User Insights Section ============== -->
+<div class="foregroundMid">
+  <section class="secSpacer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2 data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">Implications for Others</h2>
+        </div>
+        <div>
+          <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="">
+            This approach to contact tracing not only benefits users. Analytical tools such as national or regional social
+            distance adherence and hot-spot identification can provide public health divisions with epidemiological insight
+            that both verifies data-driven solutions and supports better-informed decisions.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve column">
+          <div class="homeWorkSect">
+            <div data-aos="fade-in" data-aos-duration="600" data-aos-offset="" data-aos-delay="">
+              <img class="hotspotImg" alt="hotspot map mockup" src="img/contactTraceAlgoSections/hotspot_map.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ Footer Section ============= -->
+<footer id="footer">
+  <div class="row">
+    <div class="twleve columns" id="footSocial">
+      <ul class="footSocial">
+        <li class="hvr-skew-backward">
+          <a href="https://github.com/eyan02" style="text-decoration:none"><img src="img/footer/github.png"/></a>
+        </li>
+        <li class="hvr-skew-forward">
+          <a href="https://www.linkedin.com/in/erik-yan-5568339b/" style="text-decoration:none"><img src="img/footer/linkedin.png"/></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twleve columns" id="footBottom">
+      <ul class="footBottom">
+        <li>
+          <p id="crLeft">Code to Create</p>
+        </li>
+        <li>
+          <p id="crRight">Erik Yan 2020 ©</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- =================================================================
+================================================================== -->
+
+<script>
+  AOS.init({
+    easing: 'ease-in-out-sine'
+  })
+</script>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
