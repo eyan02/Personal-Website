@@ -107,9 +107,30 @@
           <div>
             <h2 data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">Filtering Raw Location Data</h2>
             <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
-              The primary method for interaction-event scanning is the calculation of latitude and longitude points
-              in a radial area such that the diameter between each two points is less than or equal to 6 feet.
-              This allows us to identify sub-sections of geolocation data that may contain a contact event between two people.
+              We can significantly reduce the volume of data we are comparing via compression and chunking. Our day is usually
+              somewhat structured. Because of this we can use compression to narrow an infected user’s location data to a
+              dictionary of unique GPS coordinates. The infected user’s dictionary is then compared to other user data for
+              contact interaction events. We can then section geographical areas into nested categories (such as GPS coordinate
+              by zip code and sub-chunked by 500 squared meter blocks). This simplifies user GPS coordinates to plain numbers,
+              which we can quickly compare if the two users were in the same general area.
+              </br/>
+              </br/>
+              To get a better sense of how compression and chunking is effective, lets calculate an estimated reduction in data
+              pre- and post- compression. If we estimate people spend between <b>~41% to ~65%</b> or more of their day doing repetitive
+              tasks, we can theoretically reduce our dataset by <b>~38% to ~60% (30,587 to 48,430 datapoints)</b>! Chunking does not
+              reduce the number of datapoints but does simplify our comparison of two user’s locations to larger sections of area
+              like comparing zip codes). Please see below for more detail.
+            </p>
+            <p class="calcInfo" data-aos="fade-in" data-aos-duration="400" data-aos-delay="300">
+              If we ping a user’s location every 15 seconds and examine 14 days’ worth of data (two-week incubation period) we
+              have 80,640 datapoints (4 pings/min x 60 min/hr x 24 hr/day x 14 days). According to
+              <a href="https://www2.deloitte.com/us/en/insights/economy/issues-by-the-numbers/decoding-american-time-use.html">
+              Deloitte reports</a>, we can estimate people spend between ~41% to ~65% or more of their day doing repetitive
+              tasks such as stationary work, watching tv, or sleeping. Such that the lower end (41%) represents someone who
+              watches 0 hours of TV, sleeps 6 hours, and does 3.8 hours of stationary work. And the higher end (65%) represents
+              someone who watches 2.9 hours of TV, sleeps 9 hours, and does 3.8 hours of stationary work. This equates to 2,475
+              to 3,986 unique data points (assuming 2,352 to 3,787 represents a 95% consistency with 5% deviance from the norm).
+              Thus, we are reducing our dataset by ~38% to ~60% (30,587 to 48,430 datapoints)!
             </p>
           </div>
         </div>
@@ -223,10 +244,10 @@
       </div>
       <div class="row">
         <div>
-          <div data-aos="fade-in" data-aos-duration="600" data-aos-offset="" data-aos-delay="">
+          <div data-aos="fade-in" data-aos-duration="600" data-aos-offset="-100" data-aos-delay="">
             <img class="gradeEquImg" alt="simulation" src="img/contactTraceAlgoSections/grade_equation.svg"/>
           </div>
-          <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-delay="">
+          <p class="homeOpener" data-aos="fade-in" data-aos-duration="400" data-aos-offset="-100">
             Social distance grade for each user is calculated using average skewedness across the user's contact events.
             For each contact event, a distribution of contact is created. The distribution is then analyzed for directional
             skew and categorized based on WHO and CDC social distancing guidelines from A, B, C, D, to F depending on the
