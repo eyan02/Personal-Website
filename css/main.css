@@ -36,7 +36,7 @@
     background-color: whitesmoke;
     border-radius: 15px;
     width: 60%;
-    max-width: 1200px;
+    max-width: 900px;
     min-width: 300px;
     height: 100%;
     margin: auto;
@@ -51,7 +51,8 @@
     div.foregroundTop, div.foregroundMid { width:75%; }
   }
   @media (min-width:1000px){
-    div.foregroundTop, div.foregroundMid { width:60%; }
+    div.foregroundTop, div.foregroundMid { width:60%;}
+
   }
   div.foregroundTop{
     margin-top:150px;
@@ -69,6 +70,7 @@
     text-align: center;
     font-family: Helvetica;
     overflow:hidden;
+    color: rgb(21, 82, 124);
   }
   p{
     margin: 1em;
@@ -630,6 +632,65 @@
     margin-top: 5px;
     margin-bottom: 40px;
   }
+  /* User Benefits Lists */
+  #benefitLeft{
+    border-right: 2px solid rgb(128, 128, 128,0.3);
+  }
+  #benefitMid{
+    border-left: 2px solid rgb(128, 128, 128,0.3);
+    border-right: 2px solid rgb(128, 128, 128,0.3);
+  }
+  #benefitRight{
+    border-left: 2px solid rgb(128, 128, 128,0.3);
+  }
+
+  ul.benefits {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  ul.benefits li:before {
+    content: '✓';
+    float:none;
+    display: inline-block;
+  }
+
+  ul.benefits li {
+    float:none;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  li.nonBenefit{
+    opacity: 0.3;
+  }
+
+  ul.phBenefits{
+    text-align: center;
+  }
+  @media (max-width: 1049px){
+    ul.benefits {
+      text-align: center;
+    }
+    #benefitLeft{
+      border-bottom: 2px solid rgb(128, 128, 128,0.3);
+      border-right: none;
+    }
+    #benefitMid{
+      margin-top: 12px;
+      border-bottom: 2px solid rgb(128, 128, 128,0.3);
+      border-left: none;
+      border-right: none;
+
+    }
+    #benefitRight{
+      margin-top: 12px;
+      border-left: none;
+    }
+  }
+
   /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
   /* Health System Benefits Section */
   img.hotspotImg{
@@ -649,6 +710,12 @@
   }
   /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
   /* Contact Incidence Event(s) Section */
+  p.simOpener{
+    font-size: 16px;
+    line-height: 200%;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
   p.simInfo{
     font-size: 13px;
     line-height: 200%;
@@ -656,8 +723,16 @@
     margin-bottom: 10px;
      }
   @media (min-width: 900px) {
+    p.simOpener{
+      font-size: 20px;
+    }
     p.simInfo{
       font-size: 17px;
+    }
+  }
+  @media (min-width: 1340px) {
+    p.simOpener{
+      text-align: center;
     }
   }
   img.simImg{
