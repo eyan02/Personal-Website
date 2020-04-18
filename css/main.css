@@ -10,7 +10,6 @@
     line-height: 1.4;
     font-family: inherit;
   }
-
   section.top{
     margin-top:120px;
   }
@@ -43,11 +42,14 @@
     margin-left: auto;
     margin-right: auto;
     width:80%;
+    max-width:900px;
   }
   div.transitionBreakline{
     margin-left: auto;
     margin-right: auto;
     width:80%;
+    max-width:900px;
+
     border-bottom: 1px solid lightgrey;
   }
 
@@ -70,7 +72,7 @@
     font-family: inherit;
   }
   p.bodyText{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 200%;
     /* margin-bottom: 40px; */
     color: black;
@@ -251,12 +253,6 @@
     display: inline-block;
     padding-top: 20px;
   }
-  ul.right{
-    list-style-type: none;
-    display: inline-block;
-    float: right;
-    padding-top: 20px;
-  }
   ul.homeSkills li img{
   width: 50px;
   padding: 2px;
@@ -270,9 +266,6 @@
     ul.homeSkills{
       display: flex;
       justify-content: center;
-    }
-    ul.right{
-      float: none;
     }
   }
   @media (max-width: 750px) {
@@ -304,6 +297,19 @@
   div.work{
     background: url('../img/homeSections/workSection/work.png') center center no-repeat;
     min-height: 600px;
+    max-width:900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: 1041px) {
+    p.workOpener{
+      font-size: 20px;
+    }
+    div.work{
+      border-radius: 50px;
+      -moz-border-radius:50px;  /* for Firefox */
+      -webkit-border-radius:50px; /* for Webkit-Browsers */
+    }
   }
   div.homeWorkSect {
     display: block;
@@ -346,6 +352,9 @@
   @media (max-width: 420px) {
   img.homeWorkImgs{
     max-width: 250px;
+  }
+  p.workOpener{
+    width:300px;
   }
   }
 /* Home Contact Section */
@@ -969,6 +978,20 @@
 /* ==========================================================================
    C O N T A C T     P A G E
    ========================================================================== */
+   .shadowContainer{
+     max-width: 1400px;
+     box-shadow: 0 10px 25px 0 rgba(0,0,0,.7);
+     -moz-box-shadow: 0 10px 25px 0 rgba(0,0,0,.7);
+     -webkit-box-shadow: 0 10px 25px 0 rgba(0,0,0,.7);
+   }
+
+   @media (min-width: 0px){
+     .spaceContainer{
+
+       /* box-shadow: inset 10px 10px 30px 25px rgba(0,0,0,0.3); */
+
+     }
+   }
   .contactSpaceBoard{
     display: block;
     margin-left: auto;
@@ -979,7 +1002,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow-y: scroll;
     padding: 20px 0px 20px 0px;
   }
   @media (max-width: 770px) {
@@ -991,11 +1013,6 @@
   #contactBoard{
     width: 100%;
     min-height: 400px;
-  }
-  p.contactOpener{
-    font-size: 16px;
-    line-height: 200%;
-    text-align: justify;
   }
   p.contactDisclaimer{
     font-size: 12px;
@@ -1121,9 +1138,6 @@
       position: relative;
       top: -320px;
     }
-    p.contactOpener{
-      font-size: 20px;
-     }
     p.contactShoutout{
       font-size: 20px;
      }
